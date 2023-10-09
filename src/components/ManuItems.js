@@ -1,36 +1,36 @@
 export const MenuItems = [
     {
         title : 'Home',
-        url : '#',
+        url : '/',
         cName : 'nav-links',
         icon : 'fa-solid fa-house-user'
     },
     {
         title : 'Sobre Nós',
-        url : '#sobre-nos',
+        url : '/sobrenos',
         cName : 'nav-links',
         icon : 'fa-solid fa-circle-info'
     },
     {
         title : 'Serviços',
-        url : '#servicos',
+        url : '/servicos',
         cName : 'nav-links',
         icon : 'fa-solid fa-briefcase'
     },
     {
         title : 'Contato',
-        url : '#contato',
+        url : '/contato',
         cName : 'nav-links',
         icon : 'fa-solid fa-address-book'
     },
     {
         title : 'Seja Cuidador',
-        url : '#cuidador',
+        url : '/cuidador',
         cName : 'nav-links-mobile',
     },
     {
         title : 'Conectar',
-        url : '#conectar',
+        url : '/conectar',
         cName : 'nav-links-mobile',
     }
 ]           
