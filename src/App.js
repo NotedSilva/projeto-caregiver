@@ -7,6 +7,7 @@ import Contato from './routes/Contato';
 
 function App() {
   return (
+    //ola mundo
     <div className="App">
       <Routes>
         <Route path="/" element={<Home/>}/> 
