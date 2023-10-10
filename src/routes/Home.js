@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar.js';
 import Main from '../components/Main.js';
 import img1 from '../assets/1.jpg';
+import Footer from '../components/Footer.js';
 
 function Home (){
     return(
@@ -15,6 +16,7 @@ function Home (){
           url='/'
           btnClass='botao'
           />
+          <Footer/>
         </>
     )
 }

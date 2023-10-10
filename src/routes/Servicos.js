@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar.js';
 import Main from '../components/Main.js';
 import img3 from '../assets/3.jpg';
+import Footer from '../components/Footer.js';
 
 function Servicos (){
     return(
@@ -12,6 +13,7 @@ function Servicos (){
           title='Serviços'
           btnClass='hide'
           />
+          <Footer/>
         </>
     )
 }

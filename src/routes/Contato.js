@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar.js';
 import Main from '../components/Main.js';
 import img2 from '../assets/2.jpg';
+import Footer from '../components/Footer.js';
 
 function Contato (){
     return(
@@ -12,6 +13,7 @@ function Contato (){
           title='Contato'
           btnClass='hide'
           />
+          <Footer/>
         </>
     )
 }
