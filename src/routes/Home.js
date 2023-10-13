@@ -2,6 +2,8 @@ import Navbar from '../components/Navbar.js';
 import Main from '../components/Main.js';
 import img1 from '../assets/1.jpg';
 import Footer from '../components/Footer.js';
+import Tutorial from '../components/Tutorial.js';
+import Services from '../components/Services.js';
 
 function Home (){
     return(
@@ -16,6 +18,8 @@ function Home (){
           url='/'
           btnClass='botao'
           />
+          <Tutorial/>
+          <Services/>
           <Footer/>
         </>
     )
