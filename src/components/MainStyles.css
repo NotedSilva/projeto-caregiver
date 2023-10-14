@@ -52,7 +52,9 @@ img {
     font-weight: bold;
     letter-spacing: 2px;
     color: #C67A41;
+    background-image: linear-gradient(to right, #fbd07c,#f7f779);
 }
+
 
 .main-text .hide{
     display: none;
