@@ -1,5 +1,9 @@
-import "../Tutorial/TutorialStyles.css"
+import React from 'react';
+import '../Tutorial/TutorialStyles.css';
 
+const Tutorial = () => {
+  return (
+    <div className="seu-componente"> {/* Substitua 'seu-componente' pela classe apropriada */}
       <div className="primeiro">
         <div className="primeiro-texto">
           <h2>1. Procure</h2>
@@ -10,11 +14,11 @@ import "../Tutorial/TutorialStyles.css"
         </div>
         <div className="video">
           <video
-            autoplay="autoplay"
-            muted="muted"
-            playsinline="playsinline"
+            autoPlay
+            muted
+            playsInline
             preload="none"
-            loop="loop"
+            loop
           >
             <source src="https://c.superprof.com/style/images/home/v4/animations/how-to/1.mov" />
           </video>
@@ -32,11 +36,11 @@ import "../Tutorial/TutorialStyles.css"
         </div>
         <div className="video">
           <video
-            autoplay="autoplay"
-            muted="muted"
-            playsinline="playsinline"
+            autoPlay
+            muted
+            playsInline
             preload="none"
-            loop="loop"
+            loop
           >
             <source src="https://c.superprof.com/style/images/home/v4/animations/how-to/2.mov" />
           </video>
@@ -53,11 +57,11 @@ import "../Tutorial/TutorialStyles.css"
         </div>
         <div className="video">
           <video
-            autoplay="autoplay"
-            muted="muted"
-            playsinline="playsinline"
+            autoPlay
+            muted
+            playsInline
             preload="none"
-            loop="loop"
+            loop
           >
             <source src="https://c.superprof.com/style/images/home/v4/animations/how-to/3.mov" />
           </video>

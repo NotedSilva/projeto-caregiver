@@ -1,5 +1,6 @@
 import '../ctnform/ContatoFormStyles.css'
 import img8 from '../../assets/8.svg'
+import React, { useState } from 'react';
 
 
 function ContatoForm() {

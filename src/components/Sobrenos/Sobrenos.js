@@ -2,7 +2,7 @@ import '../Sobrenos/SobrenosStyles.css';
 
 function Sobrenos() {
   //pego a variável que passei no arquivo app
-  const { nomeUser } = useContext(Logincontexto);
+  /*const { nomeUser } = useContext(Logincontexto);*/
   return (
     <div className="Sobrenos-container">
       <h1>
