@@ -9,8 +9,6 @@ function Navigation() {
       <input
         className="search-input"
         type="text"
-        onChange={handleInputChange}
-        value={query}
         placeholder="Faça sua busca."
       />
     </div>
