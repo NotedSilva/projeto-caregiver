@@ -1,5 +1,6 @@
-import './ContatoFormStyles.css'
-import img8 from '../assets/8.svg'
+import '../ctnform/ContatoFormStyles.css'
+import img8 from '../../assets/8.svg'
+
 
 function ContatoForm(){
     return(

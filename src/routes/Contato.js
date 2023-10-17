@@ -1,8 +1,8 @@
-import Navbar from '../components/Navbar.js';
-import Main from '../components/Main.js';
+import Navbar from '../components/Navbar/Navbar';
+import Main from '../components/Main/Main';
 import img2 from '../assets/2.jpg';
-import Footer from '../components/Footer.js';
-import ContatoForm from '../components/ContatoForm.js'
+import Footer from '../components/Footer/Footer.js';
+import ContatoForm from '../components/ctnform/ContatoForm.js'
 
 function Contato (){
     return(

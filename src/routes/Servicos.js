@@ -1,8 +1,8 @@
-import Navbar from '../components/Navbar.js';
-import Main from '../components/Main.js';
+import Navbar from '../components/Navbar/Navbar';
+import Main from '../components/Main/Main';
 import img3 from '../assets/3.jpg';
-import Footer from '../components/Footer.js';
-import Services from '../components/Services.js'
+import Footer from '../components/Footer/Footer.js';
+import Services from '../components/Servicos/Services';
 
 function Servicos (){
     return(

@@ -1,8 +1,8 @@
-import Navbar from '../components/Navbar.js';
-import Main from '../components/Main.js';
+import Navbar from '../components/Navbar/Navbar';
+import Main from '../components/Main/Main';
 import img4 from '../assets/4.jpg';
-import Footer from '../components/Footer.js';
-import Sobrenos from '../components/Sobrenos.js';
+import Footer from '../components/Footer/Footer.js';
+import Sobrenos from '../components/Sobrenos/Sobrenos.js';
 
 function Sobre (){
     return(

@@ -1,4 +1,4 @@
-import './SobrenosStyles.css';
+import '../Sobrenos/SobrenosStyles.css';
 
 function Sobrenos (){
     return(

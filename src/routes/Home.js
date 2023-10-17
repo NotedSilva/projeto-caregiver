@@ -1,9 +1,13 @@
-import Navbar from '../components/Navbar.js';
-import Main from '../components/Main.js';
+import Navbar from '../components/Navbar/Navbar';
+import Main from '../components/Main/Main';
 import img1 from '../assets/1.jpg';
-import Footer from '../components/Footer.js';
-import Tutorial from '../components/Tutorial.js';
-import Services from '../components/Services.js';
+import Footer from '../components/Footer/Footer.js';
+import Tutorial from '../components/Tutorial/Tutorial';
+import Services from '../components/Servicos/Services';
+import Navigation from '../components/Busca/Navigation/Navigation';
+import Products from '../components/Busca/Products/Products';
+import Recomended from '../components/Busca/Recomended/Recomended';
+import Sidebar from '../components/Busca/Sidebar/Sidebar';
 
 
 function Home (){
@@ -21,6 +25,10 @@ function Home (){
           />
           <Tutorial/>
           <Services/>
+          <Sidebar/>
+          <Navigation/>
+          <Recomended/>
+          <Products/>
           <Footer/>
         </>
     )

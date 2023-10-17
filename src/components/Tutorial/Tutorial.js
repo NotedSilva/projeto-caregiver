@@ -1,4 +1,4 @@
-import "./TutorialStyles.css"
+import "../Tutorial/TutorialStyles.css"
 
 const Tutorial = () =>{
     return (

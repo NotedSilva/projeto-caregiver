@@ -1,13 +1,13 @@
-import './ServicesStyles.css'
-import ServicesData from './ServicesData'
-import img5 from '../assets/5.jpg'
-import img6 from '../assets/6.jpg'
-import img7 from '../assets/7.jpg'
+import '../Servicos/ServicesStyles.css'
+import ServicesData from '../Servicos/ServicesData'
+import img5 from '../../assets/5.jpg'
+import img6 from '../../assets/6.jpg'
+import img7 from '../../assets/7.jpg'
 
 function Services(){
     return(
         <div className="services">
-            <h1>Serviços</h1>
+            <h1>Nossos Serviços</h1>
             <p>Facilitando a sua vida com serviços excepcionais de cuidadoria.</p>
             <div className="servicescard">
                 <ServicesData 

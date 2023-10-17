@@ -1,4 +1,4 @@
-import './ServicesStyles.css'
+import '../Servicos/ServicesStyles.css'
 
 function ServicesData(props){
     return(
