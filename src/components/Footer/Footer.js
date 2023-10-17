@@ -51,21 +51,6 @@ const Footer = () => {
           <a href='/'>Licença</a>
         </div>
       </div>
-
-      <div>
-        <a href='/'>
-          <i className="fa-brands fa-facebook-square"></i>
-        </a>
-        <a href='/'>
-          <i className="fa-brands fa-instagram-square"></i>
-        </a>
-        <a href='/'>
-          <i className="fa-brands fa-twitter-square"></i>
-        </a>
-        <a href='/'>
-          <i className="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
     </div>
   );
 };
