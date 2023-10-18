@@ -4,7 +4,7 @@ import '../Navigation/NavigationStyles.css'
 
 function Navigation() {
   return (
-    <nav>
+    <nav className="nav1">
     <div className="nav-container">
       <input
         className="search-input"

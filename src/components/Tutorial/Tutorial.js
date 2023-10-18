@@ -3,7 +3,9 @@ import '../Tutorial/TutorialStyles.css';
 
 const Tutorial = () => {
   return (
-    <div className="seu-componente"> {/* Substitua 'seu-componente' pela classe apropriada */}
+    <div className="tutorial">
+      <h1>Nunca foi tão simples, cuidar de quem você ama
+</h1>
       <div className="primeiro">
         <div className="primeiro-texto">
           <h2>1. Procure</h2>

@@ -25,10 +25,10 @@ function Home (){
           />
           <Tutorial/>
           <Services/>
-          <Sidebar/>
+          {/*<Sidebar/>
           <Navigation/>
           <Recomended/>
-          <Products/>
+          <Products/>*/}
           <Footer/>
         </>
     )
