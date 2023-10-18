@@ -1,73 +1,3 @@
-/*.tutorial{
-    margin: 4rem 6rem;
-}
-
-.tutorial h1{
-    font-size: 2.2rem;
-    color: #D39C75;
-}
-
-.primeiro{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 4.5rem;
-}
-
-.primeiro h2{
-    padding-bottom: 1rem;
-    font-size: 1.9rem;
-    font-weight: 600;
-    color: #D8A683;
-}
-
-.primeiro p{
-    text-align: start;
-    font-size: 1.1rem;
-    word-wrap: break-word;
-    margin-left: 7rem;
-    color: #D8A683;
-}
-
-.video{
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.video video{
-    width: 60%;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: -1px 1px 62px -18px rgba(0,0,0,0.19);
-}
-
-
-
-
-
-@media screen and (max-width: 850px) {
-    .tutorial {
-        margin: 4rem 2rem;
-    }
-    .primeiro{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 2.5rem;
-    }
-    .primeiro p{
-        width: 100%;
-    }
-    .video{
-        width: 100%;
-        margin: 1.8rem 0;
-        justify-content: center;
-    }
-}
-
-*/
-
 .tutorial {
   display: grid;
   justify-content: center;
@@ -81,7 +11,8 @@
   font-size: 2.1rem;
   margin-bottom: 5rem;
   margin-top: 3rem;
-  color: #C67A41;
+  color: #1a0d04;
+  font-weight: bold;
 }
 
 .tutorial .primeiro,
@@ -126,13 +57,14 @@
   font-size: 20px;
   margin: 0;
   padding: 0;
-  color: #d8a683;
+  color: #1a0d04;
+  font-weight: 700;
 }
 
 .tutorial p {
   font-size: 17px;
   margin: 5px 0; 
-  color: #d8a683;
+  color: #161412;
   text-align: left;
   max-width: 300px;
   word-wrap: break-word;

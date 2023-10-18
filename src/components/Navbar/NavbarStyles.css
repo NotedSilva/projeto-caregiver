@@ -13,6 +13,7 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 999;
+    margin: 0 auto;
 }
 
 .navbar-logo{
@@ -38,6 +39,8 @@
     white-space: nowrap;
 }
 
+
+
 .nav-links i{
     padding-right: 10px;
 }
@@ -53,7 +56,9 @@
     display: none;
 }
 
-button{
+
+
+#btn-cuidador,#btn-conectar{
     padding: 0.5rem 1rem;
     white-space: nowrap;
     border-radius: 0.3rem;
@@ -64,9 +69,14 @@ button{
     transition: 0.2s ease-in-out;
     background-color: #F6E8DF;
     color: #C67A41;
+    text-decoration: none;
 }
 
-button:hover{
+#btn-cuidador{
+    margin-right: 10px;
+}
+
+#btn-cuidador:hover,#btn-conectar:hover{
     background-color: #9D5D2F;
     color: #fff;
 }
@@ -145,4 +155,13 @@ button:hover{
         font-size: 1.2rem;
         color: #C67A41;
     } 
+    #btn-cuidador,#btn-conectar{
+        display: flex;
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        }
 }

@@ -1,21 +1,25 @@
-import Navbar from '../components/Navbar/Navbar';
-import Main from '../components/Main/Main';
-import img4 from '../assets/4.jpg';
-import Footer from '../components/Footer/Footer.js';
-import Sobrenos from '../components/Sobrenos/Sobrenos.js';
+import { lazy,Suspense } from 'react';
+import img4 from '../assets/4.jpg'; 
+const Lazynav=lazy(()=>import("../components/Navbar/Navbar"))
+const Lazymain=lazy(()=>import("../components/Main/Main"))
+const Lazysobrenos=lazy(()=>import("../components/Sobrenos/Sobrenos.js"))
+const Lazyfooter=lazy(()=>import("../components/Footer/Footer.js"))
+
 
 function Sobre (){
     return(
         <>
-        <Navbar />
-          <Main
+      <Suspense fallback={<div>ta regado</div>}>
+        <Lazynav />
+          <Lazymain
           cName='main-mid'
           MainImg={img4}
           title='Sobre Nós'
           btnClass='hide'
           />
-          <Sobrenos/>
-          <Footer/>
+          <Lazysobrenos/>
+          <Lazyfooter/>
+          </Suspense>
         </>
     )
 }
