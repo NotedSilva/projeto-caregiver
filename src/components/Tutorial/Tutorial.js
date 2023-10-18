@@ -3,7 +3,7 @@ import '../Tutorial/TutorialStyles.css';
 
 const Tutorial = () => {
   return (
-    <div className="seu-componente"> {/* Substitua 'seu-componente' pela classe apropriada */}
+    <div className="tutorial"> {/* Substitua 'seu-componente' pela classe apropriada */}
       <div className="primeiro">
         <div className="primeiro-texto">
           <h2>1. Procure</h2>
