@@ -1,20 +1,26 @@
-import Navbar from '../components/Navbar/Navbar';
-import Main from '../components/Main/Main';
+
 import img1 from '../assets/1.jpg';
-import Footer from '../components/Footer/Footer.js';
-import Tutorial from '../components/Tutorial/Tutorial';
-import Services from '../components/Servicos/Services';
-import Navigation from '../components/Busca/Navigation/Navigation';
-import Products from '../components/Busca/Products/Products';
-import Recomended from '../components/Busca/Recomended/Recomended';
-import Sidebar from '../components/Busca/Sidebar/Sidebar';
 
 
-function Home (){
-    return(
-        <>
-        <Navbar />
-          <Main
+import React, { lazy, Suspense } from 'react';
+
+// Importe os componentes usando React.lazy
+const LazyNavbar = lazy(() => import('../components/Navbar/Navbar'));
+const LazyMain = lazy(() => import('../components/Main/Main'));
+const LazyFooter = lazy(() => import('../components/Footer/Footer'));
+const LazyTutorial = lazy(() => import('../components/Tutorial/Tutorial'));
+const LazyServices = lazy(() => import('../components/Servicos/Services'));
+const LazyNavigation = lazy(() => import('../components/Busca/Navigation/Navigation'));
+const LazyProducts = lazy(() => import('../components/Busca/Products/Products'));
+const LazyRecomended = lazy(() => import('../components/Busca/Recomended/Recomended'));
+const LazySidebar = lazy(() => import('../components/Busca/Sidebar/Sidebar'));
+
+function Home() {
+  return (
+    <>
+      <Suspense fallback={<div>Carregando...</div>}>
+        <LazyNavbar />
+        <LazyMain
           cName='main'
           MainImg={img1}
           title='Cuide Bem, Viva Melhor'
@@ -22,16 +28,19 @@ function Home (){
           buttonText='Conheça Nossos Cuidadores'
           url='/'
           btnClass='botao'
-          />
-          <Tutorial/>
-          <Services/>
-          {/*<Sidebar/>
-          <Navigation/>
-          <Recomended/>
-          <Products/>*/}
-          <Footer/>
-        </>
-    )
+        />
+        <LazyTutorial />
+        <LazyServices />
+        {/*<LazySidebar />
+        <LazyNavigation />
+        <LazyRecomended />
+        <LazyProducts />*/}
+        <LazyFooter />
+      </Suspense>
+    </>
+  );
 }
 
 export default Home;
+
+

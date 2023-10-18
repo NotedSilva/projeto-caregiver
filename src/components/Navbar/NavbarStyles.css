@@ -13,6 +13,7 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 999;
+    margin: 0 auto;
 }
 
 .navbar-logo{
