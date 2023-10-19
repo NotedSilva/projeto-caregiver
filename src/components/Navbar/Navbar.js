@@ -25,7 +25,7 @@ const Navbar = () => {
                 {MenuItems.map((item, index) => (
 
                     <li key={index}>
-                        <Link className={item.cName} to={item.url}>
+                        <Link id={item.id} className={item.cName} to={item.url}>
                             <i className={item.icon}></i>
                             {item.title}
                         </Link>

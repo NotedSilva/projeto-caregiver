@@ -26,15 +26,11 @@ function Home() {
           title='Cuide Bem, Viva Melhor'
           text='Seu Bem-Estar é a Nossa Prioridade'
           buttonText='Conheça Nossos Cuidadores'
-          url='/'
+          url='/NossosCuidadores'
           btnClass='botao'
         />
         <LazyTutorial />
         <LazyServices />
-        {/*<LazySidebar />
-        <LazyNavigation />
-        <LazyRecomended />
-        <LazyProducts />*/}
         <LazyFooter />
       </Suspense>
     </>

@@ -79,9 +79,11 @@
 
 .tutorial h1 {
   font-size: 2.1rem;
-  margin-bottom: 5rem;
-  margin-top: 3rem;
-  color: #C67A41;
+  color: #140f0b;
+  max-width: 500px;
+  text-align: center;
+  line-height: 1;
+  margin: 0 auto;
 }
 
 .tutorial .primeiro,
@@ -126,13 +128,14 @@
   font-size: 20px;
   margin: 0;
   padding: 0;
-  color: #d8a683;
+  color: black;
+  font-weight: 700;
 }
 
 .tutorial p {
   font-size: 17px;
   margin: 5px 0; 
-  color: #d8a683;
+  color: #050403;
   text-align: left;
   max-width: 300px;
   word-wrap: break-word;

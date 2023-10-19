@@ -27,13 +27,13 @@ export const MenuItems = [
         title : 'Seja Cuidador',
         url : '/cuidador',
         cName : 'nav-links',
-        icon : 'fa-solid fa-address-book'
+        id : 'btn-cuidador',
         
     },
     {
         title : 'Conectar',
         url : '/conectar',
         cName : 'nav-links',
-        icon : 'fa-solid fa-briefcase'
+        id : 'btn-conectar',
     }
 ]           
