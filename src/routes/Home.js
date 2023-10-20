@@ -10,10 +10,7 @@ const LazyMain = lazy(() => import('../components/Main/Main'));
 const LazyFooter = lazy(() => import('../components/Footer/Footer'));
 const LazyTutorial = lazy(() => import('../components/Tutorial/Tutorial'));
 const LazyServices = lazy(() => import('../components/Servicos/Services'));
-const LazyNavigation = lazy(() => import('../components/Busca/Navigation/Navigation'));
-const LazyProducts = lazy(() => import('../components/Busca/Products/Products'));
-const LazyRecomended = lazy(() => import('../components/Busca/Recomended/Recomended'));
-const LazySidebar = lazy(() => import('../components/Busca/Sidebar/Sidebar'));
+
 
 function Home() {
   return (
