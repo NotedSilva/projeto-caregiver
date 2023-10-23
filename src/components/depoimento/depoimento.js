@@ -1,16 +1,44 @@
 import data from '../../db/DbData.json'
+import Slider from 'react-slick';
 import '../depoimento/depoimento.css'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 
 export default function Testimonial() {
+
+  const settings = {
+    dots: false,
+    infinite: true, 
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <div className="slick-prev" />,
+    nextArrow: <div className="slick-next" />,
+  };
+
     return (
       <section className="testimonial--section" id="testimonial">
             <h2 className="sections--heading">Feedback</h2>
         <div className="testimonial--section--container">
+        <Slider {...settings}>
           {data?.testimonial?.map((item, index) => (
             <div key={index} className="testimonial--section--card">
+              <p className="text-md">{item.description}</p>
+              <div className="testimonial--section--card--author--detail">
+                <img id='avatar' src={item.src} alt="Avatar" />
+                <div>
+                  <p className="text-md testimonial--author--name">
+                    {item.author_name}
+                  </p>
+                  <p className="text-md testimonial--author--designation">
+                    {item.author_designation}
+                  </p>
+                </div>
+              </div>
               <div className="testimonial--section--card--review">
-                {Array.from({ length: 6 }, (reviews, index) => (
+                {Array.from({ length: 5 }, (reviews, index) => (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="27"
@@ -25,20 +53,9 @@ export default function Testimonial() {
                   </svg>
                 ))}
               </div>
-              <p className="text-md">{item.description}</p>
-              <div className="testimonial--section--card--author--detail">
-                <img id='avatar' src={item.src} alt="Avatar" />
-                <div>
-                  <p className="text-md testimonial--author--name">
-                    {item.author_name}
-                  </p>
-                  <p className="text-md testimonial--author--designation">
-                    {item.author_designation}
-                  </p>
-                </div>
-              </div>
             </div>
           ))}
+           </Slider>
         </div>
       </section>
     );

@@ -11,6 +11,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    width: 100%;
+    margin: 0 auto;
   }
   .sections--heading {
     color: #161412;
@@ -29,6 +31,7 @@
     border: 1.33px solid #161412;
     max-width: 500px;
     max-height: 390px;
+    background-color: #fbfffd;
   }
   .testimonial--section--card--reviews {
     display: flex;
@@ -48,11 +51,99 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
+    text-align: center;
   }
   #avatar {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin: 10px; 
   }
   
+
+.slick-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-list {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  background: #161412;
+  z-index: 2;
+}
+
+.slick-prev {
+  left: -40px; /* Ajuste a posição esquerda conforme necessário */
+}
+
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: red;
+  color: #fff;
+}
+
+
+/*
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #161412;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots button.slick-active {
+  background-color: #161412;
+}
+
+*/
