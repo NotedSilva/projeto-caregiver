@@ -14,43 +14,90 @@ function ContatoForm() {
   }
 
   return (
-    <div className="Contato-Form">
-      <h1>Contate-nos</h1>
-      <div className="ctn">
-        <div className="ctn-main">
-          <div className="ctn-content">
-            <h2>Contato</h2>
-            <form action="#" method="post">
-              <input
-                type="text"
-                name="name"
-                placeholder="Insira seu Nome"
-              ></input>
-
-              <input
-                type="email"
-                name="name"
-                placeholder="Insira seu E-mail"
-                value={email}
-                onChange={handleemail}
-              ></input>
-
-              <textarea
-                name="message"
-                placeholder="Insira sua Mensagem"
-              ></textarea>
-
-              <button type="submit" className="btn" onClick={seeemail}>
-                Enviar <i className="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-          <div className="form-img">
-            <img src={img8} alt="Contato"></img>
-          </div>
-        </div>
-      </div>
+    <section id="Contact" className="contact--section">
+    <div>
+      <h2>Contate-Nos</h2>
+      <p className="text-lg">
+      Estamos ansiosos para receber suas opiniões e comentários!
+      </p>
     </div>
+    <form className="contact--form--container">
+      <div className="container">
+        <label htmlFor="first-name" className="contact--label">
+          <span className="text-md">Nome</span>
+          <input
+            type="text"
+            className="contact--input text-md"
+            name="first-name"
+            id="first-name"
+            required
+          />
+        </label>
+        <label htmlFor="last-name" className="contact--label">
+          <span className="text-md">Sobrenome</span>
+          <input
+            type="text"
+            className="contact--input text-md"
+            name="last-name"
+            id="last-name"
+            required
+          />
+        </label>
+        <label htmlFor="email" className="contact--label">
+          <span className="text-md">E-mail</span>
+          <input
+            type="email"
+            className="contact--input text-md"
+            name="email"
+            id="email"
+            required
+          />
+        </label>
+        <label htmlFor="phone-number" className="contact--label">
+          <span className="text-md">Telefone</span>
+          <input
+            type="number"
+            className="contact--input text-md"
+            name="phone-number"
+            id="phone-number"
+            required
+          />
+        </label>
+      </div>
+      <label htmlFor="choode-topic" className="contact--label">
+        <span className="text-md">Assunto</span>
+        <select id="choose-topic" className="contact--input text-md">
+          <option>Escolha...</option>
+          <option>Solicitação de Cuidador</option>
+          <option>Informações sobre Cuidadores</option>
+          <option>Problemas Técnicos</option>
+          <option>Feedback e Sugestões</option>
+          <option>Relatório de Abuso ou Mau Comportamento</option>
+          <option>Parcerias e Oportunidades de Trabalho</option>
+          <option>Assistência com Cadastro ou Perfil</option>
+          <option>Perguntas sobre Pagamentos</option>
+          <option>Relatórios de Satisfação</option>
+          <option>Outros</option>
+        </select>
+      </label>
+      <label htmlFor="message" className="contact--label">
+        <span className="text-md">Mensagem</span>
+        <textarea
+          className="contact--input text-md"
+          id="message"
+          rows="8"
+          placeholder="Escreva uma mensagem..."
+        />
+      </label>
+      <label htmlFor="checkboc" className="checkbox--label">
+        <input type="checkbox" required name="checkbox" id="checkbox" />
+        <span className="text-sm">Eu aceito os termos</span>
+      </label>
+      <div>
+        <button className="btn btn-primary contact--form--btn">Enviar</button>
+      </div>
+    </form>
+  </section>
   );
 }
 

@@ -1,0 +1,58 @@
+.testimonial--section {
+    display: flex;
+    padding: 112px 84.3px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fbfffd;
+  }
+  .testimonial--section--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .sections--heading {
+    color: #161412;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  .text-md{
+    margin-top: 15px;
+  }
+  .testimonial--section--card {
+    padding: 42.6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42.6px;
+    border-radius: 10px;
+    border: 1.33px solid #161412;
+    max-width: 500px;
+    max-height: 390px;
+  }
+  .testimonial--section--card--reviews {
+    display: flex;
+    align-items: flex-start;
+    gap: 5.33px;
+  }
+  .testimonial--section--card--author--detail {
+    display: flex;
+    align-items: center;
+    gap: 21.3px;
+    padding-top: 20px;
+  }
+  .testimonial--author--name {
+    font-weight: 600;
+  }
+  .testimonial--author--designation {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  #avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px; 
+  }
+  
