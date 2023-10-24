@@ -101,49 +101,10 @@
   align-items: center;
   border-radius: 50%;
   transition: background-color 0.3s ease;
-  background: #161412;
+  background: 	#D8BFD8 !important;
   z-index: 2;
 }
 
 .slick-prev {
-  left: -40px; /* Ajuste a posição esquerda conforme necessário */
+  left: -40px;
 }
-
-
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: red;
-  color: #fff;
-}
-
-
-/*
-.slick-dots {
-  position: absolute;
-  bottom: 10px;
-  list-style: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slick-dots li {
-  margin: 0 5px;
-}
-
-.slick-dots button {
-  display: block;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #161412;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.slick-dots button.slick-active {
-  background-color: #161412;
-}
-
-*/

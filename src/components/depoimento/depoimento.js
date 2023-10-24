@@ -14,8 +14,7 @@ export default function Testimonial() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: <div className="slick-prev" />,
-    nextArrow: <div className="slick-next" />,
+    arrows: true,
   };
 
     return (

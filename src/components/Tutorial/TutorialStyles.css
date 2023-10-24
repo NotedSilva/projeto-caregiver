@@ -4,13 +4,13 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  margin: 4rem 6rem;
+  background-color: #FFFAFA;
 }
 
 .tutorial h1 {
   font-size: 2.1rem;
   margin-bottom: 5rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   color: #1a0d04;
   font-weight: bold;
 }
@@ -79,4 +79,31 @@
 .tutorial .video video {
   border-radius: 2.5rem;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tutorial .primeiro,
+  .tutorial .segundo,
+  .tutorial .terceiro {
+    flex-direction: column;
+  }
+
+  .tutorial .primeiro-texto,
+  .tutorial .segundo-texto,
+  .tutorial .terceiro-texto,
+  .tutorial .video {
+    padding: 10px;
+  }
+  .tutorial h1 {
+    font-size: 1.7rem;
+  }
+
+  .tutorial .video {
+    padding: 0;
+  }
+
+  .tutorial .video video {
+    border-radius: 2.5rem;
+    max-width: 100%;
+  }
 }

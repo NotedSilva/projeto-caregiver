@@ -6,7 +6,7 @@ import img7 from '../../assets/7.jpg'
 
 function Services(){
     return(
-        <div className="services">
+        <section className="services">
             <h1>Nossos Serviços</h1>
             <p>Facilitando a sua vida com serviços excepcionais de cuidadoria.</p>
             <div className="servicescard">
@@ -32,7 +32,7 @@ function Services(){
           }
         />
       </div>
-    </div>
+    </section>
   );
 }
 

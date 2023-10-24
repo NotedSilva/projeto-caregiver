@@ -3,7 +3,7 @@ import '../Tutorial/TutorialStyles.css';
 
 const Tutorial = () => {
   return (
-    <div className="tutorial">
+    <section className="tutorial">
       <h1>Nunca foi tão simples, cuidar de quem você ama
 </h1>
       <div className="primeiro">
@@ -69,7 +69,7 @@ const Tutorial = () => {
           </video>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
