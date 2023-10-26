@@ -12,7 +12,6 @@ const LazyTutorial = lazy(() => import('../components/Tutorial/Tutorial'));
 const LazyServices = lazy(() => import('../components/Servicos/Services'));
 const LazyDepoimento = lazy(() => import('../components/depoimento/depoimento'));
 
-
 function Home() {
   return (
     <>
@@ -24,7 +23,7 @@ function Home() {
           title='Cuide Bem, Viva Melhor'
           text='Seu Bem-Estar é a Nossa Prioridade'
           buttonText='Conheça Nossos Cuidadores'
-          url='/'
+          url='/NossosCuidadores'
           btnClass='botao'
         />
         <LazyTutorial />
