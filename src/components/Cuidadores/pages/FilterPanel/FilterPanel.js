@@ -1,9 +1,24 @@
 import React from 'react'
+import { FilterList } from '@mui/icons-material';
 
-const FilterPanel = () => {
+const FilterPanel = (categoryList,selectedCategory,selectCategory) => {
   return (
     <div>
-      <h1>Filter Panel</h1>
+      {/* Category */}
+      <div className="input-group">
+        <p className="label">Categoria</p>
+        <FilterList
+        options={categoryList}
+        value={selectedCategory}
+        selectToggle={selectCategory}
+        />
+      </div>
+
+      {/* Localizaçao */}
+
+      {/* Price Range */}
+
+      {/* Star Rating */}
     </div>
   )
 }
