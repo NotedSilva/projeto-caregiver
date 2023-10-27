@@ -1,8 +1,7 @@
-import { Component } from "react";
 import  "../Navbar/NavbarStyles.css"
 import { Link } from "react-router-dom"
 import { MenuItems } from "../Rotas/ManuItems"
-import { useState,useEffect } from "react";
+import { useState} from "react";
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);

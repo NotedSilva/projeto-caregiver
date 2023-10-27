@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import '../EmptyView/EmptyViewStyles.css';
+import animation from '../../../../assets/animation.gif'
 
-const EmptyView = () => {
-  return (
-    <div>
-      <h1>Empty View</h1>
-    </div>
-  )
-}
+const EmptyView = () => (
+  <div className='emptyView-wrap'>
+    <img src={animation} alt='' />
+  </div>
+);
 
-export default EmptyView; 
+export default EmptyView;

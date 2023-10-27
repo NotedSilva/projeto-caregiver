@@ -1,9 +1,17 @@
 import React from 'react'
+import { Search } from '@mui/icons-material';
+import '../SearchBar/SearchBarStyles.css';
 
-const SearchBar = () => {
+const SearchBar = ({ value, changeInput }) => {
   return (
-    <div>
-      <h1>Search Bar</h1>
+    <div className='searchBar-wrap'>
+       <Search className='searchBar-icon' />
+    <input
+      type='text'
+      placeholder='Encontre seu cuidador'
+      value={value}
+      onChange={changeInput}
+    />
     </div>
   )
 }

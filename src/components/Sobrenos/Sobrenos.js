@@ -1,7 +1,5 @@
 import React from 'react';
-import {Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel, AccordionItemState} from 'react-accessible-accordion';
 import "react-accessible-accordion/dist/fancy-example.css";
-import {MdOutlineArrowDrop} from 'react-icons/md';
 import '../Sobrenos/SobrenosStyles.css';
 import img15 from '../../assets/5.jpg'
 
