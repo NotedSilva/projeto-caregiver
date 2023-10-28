@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #C67A41;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94592c;
+}
+
+
 .testimonial--section {
     display: flex;
     padding: 112px 84.3px;
@@ -84,27 +99,6 @@
   align-items: stretch;
 }
 
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  color: #000;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-  background: 	#D8BFD8 !important;
-  z-index: 2;
-}
 
-.slick-prev {
-  left: -40px;
-}
+
+

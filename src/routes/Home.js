@@ -11,6 +11,7 @@ const LazyFooter = lazy(() => import('../components/Footer/Footer'));
 const LazyTutorial = lazy(() => import('../components/Tutorial/Tutorial'));
 const LazyServices = lazy(() => import('../components/Servicos/Services'));
 const LazyDepoimento = lazy(() => import('../components/depoimento/depoimento'));
+const LazyGaleria = lazy(() => import('../components/Galeria/Galeria'));
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
         />
         <LazyTutorial />
         <LazyServices />
+        <LazyGaleria />
         <LazyDepoimento/>
         <LazyFooter />
         </Suspense>
