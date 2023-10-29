@@ -8,20 +8,10 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function Testimonial() {
 
-  const settings = {
-    dots: false,
-    infinite: true, 
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  };
-
     return (
       <section className="testimonial--section" id="testimonial">
             <h2 className="sections--heading">Feedback</h2>
         <div className="testimonial--section--container">
-        <Slider {...settings}>
           {data?.testimonial?.map((item, index) => (
             <div key={index} className="testimonial--section--card">
               <p className="text-md">{item.description}</p>
@@ -54,7 +44,6 @@ export default function Testimonial() {
               </div>
             </div>
           ))}
-           </Slider>
         </div>
       </section>
     );
