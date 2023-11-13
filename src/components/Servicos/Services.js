@@ -1,4 +1,4 @@
-import '../Servicos/ServicesStyles.css'
+import '../Servicos/ServicesStyles.css';
 import ServicesData from '../Servicos/ServicesData'
 import img5 from '../../assets/5.jpg'
 import img6 from '../../assets/6.jpg'

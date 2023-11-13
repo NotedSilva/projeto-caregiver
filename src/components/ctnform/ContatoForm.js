@@ -21,7 +21,7 @@ function ContatoForm() {
       </p>
     </div>
     <form className="contact--form--container">
-      <div className="container">
+      <div className="container10">
         <label htmlFor="first-name" className="contact--label">
           <span className="text-md">Nome</span>
           <input
