@@ -7,7 +7,7 @@ const Conectar=()=>{
 return( 
 <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundImage: `url(${img1010})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
         <Navbar />
-    <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+    <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50rem' }}>
     <Login/>
     </div>
     <Footer />
