@@ -1,22 +1,130 @@
-.Sobrenos-container{
-    margin: 4rem 6rem;
-    text-align: start;
+.About-us  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#8399a2, #8399a2 50%, #eef2f3 50%, #eef2f3 100%);
+    min-height: 70vh;
 }
 
-.Sobrenos-container h1{
-    padding-bottom: 1rem; 
-    color: #C67A41;
-    font-weight: 700;
+.container20{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.Sobrenos-container p{
-    padding-bottom: 2rem;
-    color: #D8A683;
-    font-weight: 600;
+.container20 .box20{
+    position: relative;
+    width: 320px;
+    background: #fff;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
 }
 
-@media screen and (max-width: 850px){
-    .Sobrenos-container{
-        margin: 4rem 2rem;
+.container20 .box20::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #294861;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.container20 .box20:hover::before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.container20 .box20 h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4rem;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container20 .box20:hover h2 {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+
+.container20 .box20 h3{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+
+.container20 .box20:hover h3 {
+    color: #fff;
+}
+
+.container20 .box20 p{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+}
+
+.container20 .box20:hover p{
+    color: #fff;
+}
+
+.icon-about{
+    margin: -1rem;
+}
+
+.p-about{
+    margin-top: 2rem;
+    font-weight: 520;
+}
+
+@media screen and (max-width: 1200px) {
+    .About-us{
+        min-height: 50vh;
+    }
+
+    .container20 .box20 {
+
+        padding: 40px 20px;
+    }
+
+    .container20 .box20 h2 {
+        font-size: 1.5rem;
+    }
+
+    .container20 .box20 p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container20 .box20 {
+        width: calc(65% - 25px);
+        margin: 30px auto 20px;
+        padding: 8% 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container20 .box20 {
+        width: calc(100% - 50px);
+        margin: 30px auto 20px;
+        padding: 10% 10%;
+    }
+
+    .container20 .box20 h2 {
+        font-size: 1.5rem;
     }
 }

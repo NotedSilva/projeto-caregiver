@@ -34,16 +34,9 @@ const dataFaq = [
 
 function Faq() {
   const [activeFaq, setActiveFaq] = useState(-1);
-  const [accordionIcons, setAccordionIcons] = useState({});
 
   function toggleAccordion(index) {
-    if (index === activeFaq) {
-      setActiveFaq(-1);
-      setAccordionIcons({ ...accordionIcons, [index]: '-' });
-    } else {
-      setActiveFaq(index);
-      setAccordionIcons({ ...accordionIcons, [index]: '+' });
-    }
+    setActiveFaq(prevActiveFaq => (prevActiveFaq === index ? -1 : index));
   }
 
   return (
@@ -60,7 +53,7 @@ function Faq() {
                 {item.question}
               </h3>
               <span className={`accordion__expand-button ${activeFaq === index ? "active" : ""}`}>
-                {accordionIcons[index] || '+'}
+                {activeFaq === index ? '-' : '+'}
               </span>
             </div>
             <div className={`accordion__faq-answer ${activeFaq === index ? "active" : "inactive"}`}>
