@@ -6,7 +6,11 @@
     align-items: center;
     text-align: center;
     gap: 64px;
-    background-color: 	#fffdfd;
+    background-image: url(../../assets//img15.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+  background-position: left;
+  background-color: #E3E3E3;
   }
   .contact--form--container {
     display: grid;
@@ -57,7 +61,7 @@
 
   .btn-primary:hover {
     color: #161412;
-    background-color: #418a89;
+    background-color: #d3ceba;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -72,5 +76,6 @@
 
     .contact--section {
         padding: 100px 20px;
+        background-image: none;
     }
 }
