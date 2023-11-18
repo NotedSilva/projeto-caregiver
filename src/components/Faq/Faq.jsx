@@ -66,4 +66,4 @@ function Faq() {
   );
 }
 
-export default Faq;
+export default React.memo(Faq);

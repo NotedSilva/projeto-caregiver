@@ -79,4 +79,4 @@ function Galeria() {
   );
 }
 
-export default Galeria;
+export default React.memo(Galeria);

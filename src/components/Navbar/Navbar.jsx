@@ -2,6 +2,7 @@ import  "../Navbar/NavbarStyles.css"
 import { Link } from "react-router-dom"
 import { MenuItems } from "../Rotas/ManuItems"
 import { useState} from "react";
+import React from "react";
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -39,4 +40,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default React.memo(Navbar);

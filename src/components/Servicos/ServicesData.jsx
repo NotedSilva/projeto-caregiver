@@ -1,4 +1,5 @@
 import '../Servicos/ServicesStyles.css'
+import React from 'react';
 
 function ServicesData(props){
     return(
@@ -12,7 +13,7 @@ function ServicesData(props){
     )
 }
 
-export default ServicesData;
+export default React.memo(ServicesData);
 
 
 

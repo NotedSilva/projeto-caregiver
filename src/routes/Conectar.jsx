@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Login from '../components/login/login';
-import Footer from '../components/Footer/Footer.js';
+import Footer from '../components/Footer/Footer';
 import img14 from '../assets/img14.jpg';
 
 const Conectar = () => {
@@ -26,4 +26,4 @@ const Conectar = () => {
   );
 };
 
-export default Conectar;
+export default React.memo(Conectar);

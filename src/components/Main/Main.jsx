@@ -1,4 +1,5 @@
 import '../Main/MainStyles.css'
+import React from 'react';
 
 function Main (props){
     return(<>
@@ -17,4 +18,4 @@ function Main (props){
     )
 }
 
-export default Main;
+export default React.memo(Main);

@@ -16,4 +16,4 @@ function NossosCuidadores() {
   );
 }
 
-export default NossosCuidadores;
+export default React.memo(NossosCuidadores);

@@ -100,4 +100,4 @@ function ContatoForm() {
   );
 }
 
-export default ContatoForm;
+export default React.memo(ContatoForm);

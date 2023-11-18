@@ -3,6 +3,7 @@ import img1 from '../assets/1.jpg';
 
 
 import React, { lazy, Suspense } from 'react';
+import Contato from '../components/Contato/Contato';
 
 // Importe os componentes usando React.lazy
 const LazyNavbar = lazy(() => import('../components/Navbar/Navbar'));
@@ -31,14 +32,15 @@ function Home() {
         <LazyTutorial />
         <LazyServices />
         <LazyGaleria />
-        <LazyDepoimento/>
-        <LazyFaq/>
+        <LazyDepoimento />
+        <LazyFaq />
+        <Contato />
         <LazyFooter />
         </Suspense>
     </>
   );
 }
 
-export default Home;
+export default React.memo(Home);
 
 

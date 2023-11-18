@@ -149,4 +149,4 @@ const Cuidadores = () => {
     )
 }
 
-export default Cuidadores; 
+export default React.memo(Cuidadores); 

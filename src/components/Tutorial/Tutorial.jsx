@@ -73,4 +73,4 @@ const Tutorial = () => {
   );
 };
 
-export default Tutorial;
+export default React.memo(Tutorial);

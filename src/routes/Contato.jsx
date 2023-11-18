@@ -26,4 +26,4 @@ function Contato() {
   );
 }
 
-export default Contato;
+export default React.memo(Contato);

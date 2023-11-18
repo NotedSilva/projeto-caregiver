@@ -25,4 +25,4 @@ function Servicos() {
   );
 }
 
-export default Servicos;
+export default React.memo(Servicos);

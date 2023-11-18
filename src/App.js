@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Logincontexto from "./components/contextos/loginInfo";
 import Home from "./routes/Home";
 import SobreNos from "./routes/Sobre";
 import Servicos from "./routes/Servicos";
@@ -14,7 +13,6 @@ function App() {
   const [nomeUser, SetnomeUser] = useState("ola mundo");
   return (
     <div className="App">
-      <Logincontexto.Provider value={{ nomeUser }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobrenos" element={<SobreNos />} />
@@ -23,7 +21,6 @@ function App() {
           <Route path="/conectar" element={<Conectar />} />
           <Route path="/NossosCuidadores" element={<NossosCuidadores />} />
         </Routes>
-      </Logincontexto.Provider>
     </div>
   );
 }
