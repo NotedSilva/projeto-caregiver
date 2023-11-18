@@ -9,9 +9,13 @@ import '../Galeria/GaleriaStyles.css';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-import slide_image_1 from '../../assets/5.jpg';
-import slide_image_2 from '../../assets/6.jpg';
-import slide_image_3 from '../../assets/7.jpg';
+import slide_image_1 from '../../assets/img16.jpg';
+import slide_image_2 from '../../assets/img17.jpg';
+import slide_image_3 from '../../assets/img18.jpg';
+import slide_image_4 from '../../assets/img19.jpeg';
+import slide_image_5 from '../../assets/img20.jpg';
+import slide_image_6 from '../../assets/img21.jpg';
+import slide_image_7 from '../../assets/img22.jpg';
 
 
 function Galeria() {
@@ -49,16 +53,16 @@ function Galeria() {
           <img src={slide_image_3} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_1} alt="slide_image" />
+          <img src={slide_image_4} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_2} alt="slide_image" />
+          <img src={slide_image_5} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
+          <img src={slide_image_6} alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_image_1} alt="slide_image" />
+          <img src={slide_image_7} alt="slide_image" />
         </SwiperSlide>
 
         <div className="slider-controler">

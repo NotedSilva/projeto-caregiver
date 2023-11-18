@@ -1,22 +1,29 @@
+import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Login from '../components/login/login';
 import Footer from '../components/Footer/Footer.js';
-import img1010 from '../assets/1010.jpg';
+import img14 from '../assets/img14.jpg';
 
-const Conectar=()=>{
-return( 
-<div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundImage: `url(${img1010})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat',}}>
-        <Navbar />
-    <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '48rem'}}>
-    <Login/>
+const Conectar = () => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Navbar />
+      <div style={{ position: 'relative', marginLeft: '-390px', overflow: 'hidden' }}>
+        <div
+          style={{
+            backgroundImage: `url(${img14})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            height: '90vh',
+          }}
+        ></div>
+      </div>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '0px' }}>
+        <Login />
+      </div>
+      <Footer style={{ marginTop: 'auto', marginBottom: '0' }} />
     </div>
-    <Footer />
+  );
+};
 
-    
-    </div>
-
-) 
-       
-
-}
-export default Conectar
+export default Conectar;

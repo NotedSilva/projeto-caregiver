@@ -42,8 +42,8 @@ function Faq() {
   return (
     <div className="container-1">
       <div>
-        <span className="accordion__title">Perguntas Frequentes(FAQ)</span>
-        <h1 className='h1-h1'>Dúvidas Comuns Resolvidas</h1>
+        <span className="accordion__title"></span>
+        <h1 className='h1-h1'>Perguntas Frequentes(FAQ)</h1>
       </div>
       <div className="accordion__faq">
         {dataFaq.map((item, index) => (
