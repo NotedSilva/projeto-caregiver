@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { MenuItems } from "../Rotas/ManuItems"
 import { useState} from "react";
 import React from "react";
+import logoimg from '../../assets/caregiverimg.png'
 
 const Navbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -15,7 +16,9 @@ const Navbar = () => {
 
     return (
         <nav className="navbarItems">
-            <h1 className="navbar-logo">Caregiver</h1>
+            <h1 className="navbar-logo">
+            <img className="logo-img" src={logoimg} alt="logo" />
+                </h1>
 
             <div className="menu-icons" onClick={handleClick}>
                 <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

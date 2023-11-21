@@ -1,5 +1,5 @@
 .navbarItems{
-    background-color: #F2EEF0;
+    background-color: #F1EBEB;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,6 +89,14 @@
 
 .menu-icons{
     display: none;
+}
+
+.logo-img{
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    margin-top: 0.7rem;
+    filter: none !important;
 }
 
 @media screen and (max-width: 1184px) {

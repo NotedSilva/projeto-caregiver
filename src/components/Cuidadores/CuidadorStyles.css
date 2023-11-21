@@ -4,7 +4,6 @@
 }
 
 .home_panelList-wrap {
-  display: flex;
   flex: 1;
 }
 
@@ -19,4 +18,5 @@
   padding: 1rem;
   width: calc(100% - 280px);
   border-left: 1px solid #ddd;
+  margin-left: 2rem;
 }
