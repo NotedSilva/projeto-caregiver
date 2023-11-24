@@ -6,12 +6,6 @@ export const MenuItems = [
         icon : 'fa-solid fa-house-user'
     },
     {
-        title : 'Sobre Nós',
-        url : '/sobrenos',
-        cName : 'nav-links',
-        icon : 'fa-solid fa-circle-info'
-    },
-    {
         title : 'Serviços',
         url : '/servicos',
         cName : 'nav-links',
@@ -22,6 +16,12 @@ export const MenuItems = [
         url : '/contato',
         cName : 'nav-links',
         icon : 'fa-solid fa-address-book'
+    },
+    {
+        title : 'Sobre Nós',
+        url : '/sobrenos',
+        cName : 'nav-links',
+        icon : 'fa-solid fa-circle-info'
     },
     {
         title : 'Seja Cuidador',

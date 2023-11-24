@@ -6,6 +6,7 @@ import Servicos from "./routes/Servicos";
 import Contato from "./routes/Contato";
 import Conectar from "./routes/Conectar";
 import NossosCuidadores from "./routes/NossosCuidadores";
+import Cuidador from "./routes/Cuidador"
 import { useState } from "react";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Contato" element={<Contato />} />
           <Route path="/conectar" element={<Conectar />} />
           <Route path="/NossosCuidadores" element={<NossosCuidadores />} />
+          <Route path="/cuidador" element={<Cuidador />} />
         </Routes>
     </div>
   );

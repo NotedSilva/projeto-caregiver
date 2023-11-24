@@ -101,7 +101,8 @@
 
 @media screen and (max-width: 1184px) {
     .navbarItems{
-        z-index: 99;
+        display: flex;
+        z-index: 999;
     }
     .nav-menu{
         display: flex;

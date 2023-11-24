@@ -14,7 +14,6 @@ export const Container = styled.div`
   max-width: 100%;
   min-height: 400px;
   margin: 0px;
-  cursor: pointer;
   box-sizing: border-box;
   overflow: hidden;
 `;
@@ -82,6 +81,7 @@ export const Button = styled.button`
   font-weight: bold;
   padding: 12px 25px;
   letter-spacing: 1px;
+  cursor: pointer;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   &:active {

@@ -10,7 +10,7 @@ import React from 'react';
 function Sobre (){
     return(
         <>
-      <Suspense fallback={<div>ta regado</div>}>
+      <Suspense fallback={<div>Carregando...</div>}>
         <Lazynav />
           <Lazymain
           cName='main-mid'

@@ -1,13 +1,15 @@
-.cta{
+.cta {
     margin: 100px auto;
     width: 65%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../assets/1010.jpg);
-    background-position: center 10px;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../assets/img23.jpg);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
 }
+
 
 .cta h1{
     color: #fff;
