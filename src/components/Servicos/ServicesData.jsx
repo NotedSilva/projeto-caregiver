@@ -14,6 +14,3 @@ function ServicesData(props){
 }
 
 export default React.memo(ServicesData);
-
-
-

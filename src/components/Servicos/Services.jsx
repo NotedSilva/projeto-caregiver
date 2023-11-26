@@ -1,8 +1,5 @@
 import '../Servicos/ServicesStyles.css';
 import ServicesData from '../Servicos/ServicesData'
-import img5 from '../../assets/5.jpg'
-import img6 from '../../assets/6.jpg'
-import img7 from '../../assets/7.jpg'
 import React from 'react';
 
 function Services(){
@@ -12,24 +9,32 @@ function Services(){
             <p>Facilitando a sua vida com serviços excepcionais de cuidadoria.</p>
             <div className="servicescard">
                 <ServicesData 
-                image={img5}
-                heading={'Cuidado Compassivo para Idosos'}
-                text={'Oferecemos cuidadores dedicados e experientes para proporcionar o melhor apoio aos idosos. Compreendemos as necessidades únicas de cada indivíduo e estamos comprometidos em fornecer carinho, companhia e assistência profissional para garantir o bem-estar de seus entes queridos.'}
+                image={'https://img.freepik.com/fotos-gratis/enfermeira-feliz-segurando-a-mao-do-homem-idoso-na-cadeira-de-rodas-no-jardim-no-lar-de-idosos_554837-197.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=ais'}
+                heading={'Cuidado Afetuoso e Compassivo para Idososs'}
+                text={'Proporcionamos cuidado dedicado e experiente a idosos, entendendo suas necessidades únicas. Nosso compromisso é oferecer carinho, companhia e assistência profissional, assegurando o bem-estar de seus entes queridos.'}
                 />
 
         <ServicesData
-          image={img6}
-          heading={"Cuidado Carinhoso para Crianças"}
+          image={'https://img.freepik.com/fotos-gratis/feche-a-crianca-desfrutando-do-jogo-didatico_23-2149316897.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=ais'}
+          heading={"Cuidado Amoroso e Atencioso para Crianças"}
           text={
-            "Nossos cuidadores são apaixonados por cuidar das crianças, proporcionando um ambiente seguro e afetuoso. Com anos de experiência e treinamento, estamos aqui para cuidar, educar e entreter seus filhos, garantindo que cada momento seja memorável e repleto de alegria."
+            "Nossos cuidadores, apaixonados por crianças, criam um ambiente seguro e afetuoso. Com anos de experiência e treinamento, estamos aqui para cuidar, educar e entreter seus filhos, tornando cada momento memorável e repleto de alegria."
           }
         />
 
         <ServicesData
-          image={img7}
-          heading={"Amor e Atendimento para Seus Peludos"}
+          image={'https://img.freepik.com/fotos-gratis/feche-o-medico-veterinario-cuidando-do-animal-de-estimacao_23-2149267842.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=ais'}
+          heading={"Amor e Dedicação aos Seus Peludos"}
           text={
-            "Sabemos o quanto seu animal de estimação significa para você. Nossos cuidadores de pets são amantes de animais dedicados que fornecem cuidados de alta qualidade, incluindo passeios, alimentação, e carinho. Seja um cão, gato ou outro bichinho, eles receberão o amor e a atenção que merecem."
+            "Reconhecemos o valor do seu animal de estimação. Nossos cuidadores dedicados oferecem serviços de alta qualidade, incluindo passeios, alimentação e carinho. Seja um cão, gato ou outro bichinho, garantimos o amor e atenção que merecem."
+          }
+        />
+
+        <ServicesData
+          image={'https://img.freepik.com/fotos-gratis/vista-lateral-mulher-e-menino-tomando-selfie_23-2149531863.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=ais'}
+          heading={"Atenção Personalizada e Inclusiva para Você"}
+          text={
+            "Compreendemos a diversidade e oferecemos suporte especializado para pessoas com deficiência. Nossos profissionais adaptam-se às suas necessidades, proporcionando assistência cuidadosa e personalizada para promover seu bem-estar e felicidade."
           }
         />
       </div>

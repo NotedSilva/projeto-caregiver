@@ -1,6 +1,6 @@
 .container-1 {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 4rem auto;
     padding: 20px;
   }
   
@@ -31,6 +31,7 @@
     font-size: 18px;
     padding-top: 10px;
     line-height: 1.4;
+    display: none;
   }
 
   .accordion__faq-answer.active{
@@ -50,16 +51,16 @@
   
   .accordion__faq-heading {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-align: center;
   }
   
   .accordion__faq-heading h3 {
     color: #333; 
     font-weight: 600;
     font-size: 20px;
-    text-align: center;
   }
   
   .accordion__expand-button {

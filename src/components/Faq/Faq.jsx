@@ -21,15 +21,7 @@ const dataFaq = [
   {
     question: '5. Existe um sistema de chat para comunicação entre cuidadores e usuários?',
     answer: 'Sim, a plataforma "Caregiver" fornece um sistema de chat integrado que permite a comunicação direta entre cuidadores e usuários. Você pode usar o chat para discutir detalhes do serviço, disponibilidade, requisitos e outras informações relevantes.'
-  },
-  {
-    question: '6. Como posso cancelar ou modificar uma contratação?',
-    answer: 'Você pode cancelar ou modificar uma contratação entrando em contato com o cuidador ou usuário com quem você fez a contratação. É importante comunicar as mudanças ou cancelamentos com antecedência e garantir que ambas as partes estejam de acordo.'
-  },
-  {
-    question: '7. Como faço para relatar problemas ou obter suporte técnico na plataforma "Caregiver"?',
-    answer: 'Se você encontrar problemas técnicos, tiver dúvidas ou precisar de suporte, entre em contato com a equipe de suporte da plataforma "Caregiver". Normalmente, você pode encontrar informações de contato na seção de Ajuda ou Suporte do site ou aplicativo.'
-  },
+  }
 ];
 
 function Faq() {

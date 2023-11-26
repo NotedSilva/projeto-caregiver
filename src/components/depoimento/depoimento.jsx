@@ -1,4 +1,3 @@
-import data from '../../db/DbData'
 import '../depoimento/depoimento.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,42 +8,56 @@ import React from 'react';
 export default function Testimonial() {
 
     return (
-      <section className="testimonial--section" id="testimonial">
-            <h2 className="sections--heading">Feedback</h2>
-        <div className="testimonial--section--container">
-          {data?.testimonial?.map((item, index) => (
-            <div key={index} className="testimonial--section--card">
-              <p className="text-md">{item.description}</p>
-              <div className="testimonial--section--card--author--detail">
-                <img id='avatar' src={item.src} alt="Avatar" />
-                <div>
-                  <p className="text-md testimonial--author--name">
-                    {item.author_name}
-                  </p>
-                  <p className="text-md testimonial--author--designation">
-                    {item.author_designation}
-                  </p>
-                </div>
-              </div>
-              <div className="testimonial--section--card--review">
-                {Array.from({ length: 5 }, (reviews, index) => (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="27"
-                    height="26"
-                    viewBox="0 0 27 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.0945 0.953177C12.5528 -0.135435 14.1138 -0.135434 14.5722 0.95318L17.2772 7.37836C17.4705 7.8373 17.9074 8.15087 18.4089 8.19059L25.4302 8.74669C26.6199 8.84091 27.1022 10.3076 26.1959 11.0746L20.8464 15.6016C20.4643 15.925 20.2973 16.4324 20.4141 16.9158L22.0484 23.6847C22.3253 24.8315 21.0625 25.7381 20.044 25.1235L14.0327 21.4961C13.6033 21.237 13.0633 21.237 12.634 21.4961L6.62265 25.1235C5.60415 25.7381 4.34127 24.8315 4.61818 23.6847L6.25256 16.9158C6.3693 16.4324 6.20243 15.925 5.82034 15.6016L0.47075 11.0746C-0.435624 10.3076 0.0467572 8.84091 1.23639 8.74669L8.25781 8.19059C8.75933 8.15087 9.19621 7.8373 9.38942 7.37836L12.0945 0.953177Z"
-                      fill="#ffe234"
-                    />
-                  </svg>
-                ))}
+      <section className="sec-60">
+         <div class="container60">
+        <div class="container__left">
+          <h1>Leia o que nossos clientes acham sobre nós</h1>
+          <p>
+          Contamos com uma equipe de mais de 200 cuidadores especializados em nossa plataforma, dedicados a aprimorar a experiência do usuário e dos serviços prestados.
+          </p>
+          <p>
+          Auxiliamos cuidadores a expandirem sua base de clientes e a gerarem receitas multiplicadas com nossos serviços.
+          </p>
+        </div>
+        <div class="container__right">
+          <div class="card60">
+            <img src="https://openlab.ncl.ac.uk/assets/people-rob-anderson-small.jpg" alt="user" />
+            <div class="card__content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card__details">
+                <p>
+                "Demonstraram profissionalismo excepcional, compaixão genuína e comprometimento."
+                </p>
+                <h4>- Gabriel Marques</h4>
               </div>
             </div>
-          ))}
+          </div>
+          <div class="card60">
+            <img src="https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg" alt="user" />
+            <div class="card__content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card__details">
+                <p>
+                "A plataforma melhorou drasticamente a experiência de todos os usuários que buscam cuidadores. "
+                </p>
+                <h4>- Emily Muniz</h4>
+              </div>
+            </div>
+          </div>
+          <div class="card60">
+            <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" alt="user" />
+            <div class="card__content">
+              <span><i class="ri-double-quotes-l"></i></span>
+              <div class="card__details">
+                <p>
+                "Eu amei trabalhar com a equipe da Caregiver. Totalmente especialistas no que fazem!"
+                </p>
+                <h4>- Larissa Neves</h4>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
       </section>
     );
   }
