@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#8399a2, #8399a2 50%, #eef2f3 50%, #eef2f3 100%);
+    background: #8399a2;
     min-height: 70vh;
 }
 
@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #294861;
+    background: #C6783F;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
@@ -88,6 +88,13 @@
 .p-about{
     margin-top: 2rem;
     font-weight: 520;
+}
+
+.hr1{
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

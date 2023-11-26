@@ -4,8 +4,10 @@ import '../Sobrenos/SobrenosStyles.css';
 
 const About = () => {
   return (
+   
     <section className="About-us">
     <div className="container20">
+    <hr className='hr1' />
      <div className="box20">
       <h2 className="icon-about">🎯</h2>
       <h3>Missão</h3>

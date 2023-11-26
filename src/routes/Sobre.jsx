@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer';
 import Sobrenos from '../components/Sobrenos/Sobrenos';
 import Main from '../components/Main/Main';
 import Navbar from '../components/Navbar/Navbar';
+import Historia from '../components/Sobrenos/Historia';
 
 
 function Sobre (){
@@ -18,6 +19,7 @@ function Sobre (){
           title='Sobre Nós'
           btnClass='hide'
           />
+          <Historia />
           <Sobrenos/>
           <Footer/>
           </Suspense>
