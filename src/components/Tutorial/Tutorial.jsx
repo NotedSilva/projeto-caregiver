@@ -5,7 +5,7 @@ import '../Tutorial/TutorialStyles.css';
 const Tutorial = () => {
     return (
       <section className="tutorial">
-        <h1>Nunca foi tão simples, cuidar de quem você ama
+        <h1>Cuide de quem você ama!
   </h1>
         <div className="primeiro">
           <div className="primeiro-texto">

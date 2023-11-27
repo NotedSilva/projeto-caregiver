@@ -5,9 +5,9 @@ import Footer from '../components/Footer/Footer';
 import Main from '../components/Main/Main';
 import Navbar from '../components/Navbar/Navbar';
 import Tutorial from '../components/Tutorial/Tutorial';
-import Galeria from '../components/Galeria/Galeria';
 import Contato from '../components/Contato/Contato';
 import React, { Suspense } from 'react';
+import Conteudo from '../components/Conteudo/Conteudo';
 
 
 
@@ -29,7 +29,7 @@ function Home() {
         />
         <Tutorial/>
         <Services/>
-        <Galeria/>
+        <Conteudo/>
         <Depoimento/>
         <Faq/>
         <Contato/>

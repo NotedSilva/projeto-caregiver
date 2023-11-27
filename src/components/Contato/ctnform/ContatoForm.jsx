@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../ctnform/ContatoFormStyles.css'
+import './ContatoFormStyles.css'
 
 
 
