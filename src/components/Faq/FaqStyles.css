@@ -1,69 +1,63 @@
 .container-1 {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 20px;
-  }
-  
-  .h1-h1 {
-    font-size: 36px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  
-  .accordion__faq > div {
-    background-color: #f4f4f4;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 20px;
-    transition: background-color 0.2s;
-    display: flex;
-    flex-direction: column;
-  }
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 20px;
+}
 
-  .accordion__faq > div:hover {
-    background-color: #e0e0e0;
-  }
+.h1-h1 {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left; /* Alinhamento à esquerda */
+}
 
-  
-  .accordion__faq-answer {
-    color: #333;
-    font-size: 18px;
-    padding-top: 10px;
-    line-height: 1.4;
-    display: none;
-  }
+.accordion__faq {
+  display: flex;
+  flex-direction: column;
+}
 
-  .accordion__faq-answer.active{
-    display: block;
-  }
+.accordion__faq-heading {
+  background-color: #D09262; /* Cor de fundo para destacar o título */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-  .accordion__faq-answer.inactive{
-    display: none;
-  }
-  
-  .accordion__title {
-    color: #333;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .accordion__faq-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .accordion__faq-heading h3 {
-    color: #333; 
-    font-weight: 600;
-    font-size: 20px;
-  }
-  
-  .accordion__expand-button {
-    font-size: 20px;
-  }
-  
+.accordion__faq-heading:hover {
+  background-color: #C15F18; /* Cor mais escura ao passar o mouse */
+}
+
+.accordion__faq-heading h3 {
+  color: #161412;
+  font-size: 22px;
+  margin: 0;
+}
+
+.accordion__faq-answer {
+  color: #333;
+  font-size: 18px;
+  padding: 15px;
+  line-height: 1.4;
+  display: none;
+  border: 1px solid #ccc; /* Borda ao redor da resposta */
+  border-radius: 8px;
+}
+
+.accordion__faq-answer.active {
+  display: block;
+}
+
+.accordion__expand-button {
+  font-size: 20px;
+  color: #161412;
+}
+
+.active .accordion__expand-button {
+  transform: rotate(-45deg); /* Seta para baixo quando ativo */
+}
+
+.inactive .accordion__expand-button {
+  transform: rotate(135deg); /* Seta para a direita quando inativo */
+}
