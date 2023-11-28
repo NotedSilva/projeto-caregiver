@@ -32,6 +32,7 @@ function Faq() {
   }
 
   return (
+    <section className="back-faq">
     <div className="container-1">
       <div>
         <span className="accordion__title"></span>
@@ -55,6 +56,7 @@ function Faq() {
         ))}
       </div>
     </div>
+    </section>
   );
 }
 
