@@ -28,8 +28,8 @@ function Home() {
           btnClass='botao'
         />
         <Tutorial/>
-        <Services/>
         <Conteudo/>
+        <Services/>
         <Depoimento/>
         <Faq/>
         <Contato/>

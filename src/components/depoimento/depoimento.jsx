@@ -33,7 +33,7 @@ export default function Testimonial() {
             </div>
           </div>
           <div class="card60">
-            <img src="https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg" alt="user" />
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2023/07/17124030/F1K-cdbXwAgovdo-1.jpg" alt="user" />
             <div class="card__content">
               <span><i class="ri-double-quotes-l"></i></span>
               <div class="card__details">
@@ -45,7 +45,7 @@ export default function Testimonial() {
             </div>
           </div>
           <div class="card60">
-            <img src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg" alt="user" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXq9R8M4hDABmgOuIcWYDSWuTOgkPnuzHr94TE6roWgpXF8at_S6vMExdFNWhOHBD9NQ&usqp=CAU" alt="user" />
             <div class="card__content">
               <span><i class="ri-double-quotes-l"></i></span>
               <div class="card__details">

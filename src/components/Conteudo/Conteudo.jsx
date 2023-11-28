@@ -33,7 +33,7 @@ function Conteudo() {
                     src={GlobeImage}
                     alt=""
                     class="icon_box_icon" />
-                  <p class="icon_box_test">Transações Seguras</p>
+                  <p class="icon_box_test">Operações Seguras</p>
                 </div>
                 <div class="icon_box">
                   <img
@@ -47,7 +47,7 @@ function Conteudo() {
                     src={ClockImage}
                     alt=""
                     class="icon_box_icon" />
-                  <p class="icon_box_test">Site 24h</p>
+                  <p class="icon_box_test">Acesso Ininterrupto</p>
                 </div>
                 <div class="icon_box">
                   <img

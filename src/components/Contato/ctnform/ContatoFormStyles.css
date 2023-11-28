@@ -3,7 +3,8 @@
   width: 100%;
   min-height: 80vh;
   padding: 2rem;
-  background: linear-gradient(#eef2f3, #eef2f3 50%, #e4e7e4 50%, #e4e7e4 100%);
+  background: url("");
+  background-repeat: no-repeat;
   overflow: hidden;
   display: flex;
   align-items: center;
