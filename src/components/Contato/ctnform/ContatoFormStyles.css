@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 80vh;
   padding: 2rem;
-  background: url("");
+  background-image: linear-gradient(to right bottom, #fffafa, #fffbfc, #fefcfe, #fefdff, #fefeff, #f8f7fb, #f4eff7, #f2e7f1, #eed4df, #ebc2c7, #e3b1a9, #d4a48a);
   background-repeat: no-repeat;
   overflow: hidden;
   display: flex;

@@ -8,8 +8,13 @@
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+    transition: filter 0.3s;
+    filter: brightness(75%);
 }
 
+.cta:hover{
+    filter: brightness(100%);
+}
 
 .cta h1{
     color: #fff;
@@ -27,6 +32,7 @@
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .hero-btn:hover{

@@ -20,7 +20,6 @@ function Conteudo() {
           </div>
           <div class="choose_content">
             <div class="section_header">
-              <h5 class="heading_5">Por que nós</h5>
               <h2 class="section_main_title">
                 Criamos oportunidades para todos!
               </h2>

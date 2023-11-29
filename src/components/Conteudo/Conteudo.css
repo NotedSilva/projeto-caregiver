@@ -24,7 +24,7 @@
   .choose_left {
     width: 50%;
     height: 100%;
-    background-color: #D09262;
+    background-color: #ffe9d7;
   }
   .choose_right {
     width: 50%;
@@ -48,7 +48,13 @@
 
   .choose_img {
     width: 110%;
+    transition: filter 0.3s;
   }
+
+  .choose_img:hover{
+    filter: brightness(90%);
+  }
+
   .icon_boxes {
     width: 100%;
     display: grid;

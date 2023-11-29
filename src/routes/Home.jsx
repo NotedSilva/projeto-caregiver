@@ -9,10 +9,6 @@ import Contato from '../components/Contato/Contato';
 import React, { Suspense } from 'react';
 import Conteudo from '../components/Conteudo/Conteudo';
 
-
-
-
-
 function Home() {
   return (
     <>
