@@ -2,6 +2,11 @@ import React, {Suspense } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Main from '../components/Main/Main';
 import Footer from '../components/Footer/Footer';
+import Conteudo2 from '../components/Servicos/Conteudo2';
+
+
+
+
 
 
 function Servicos() {
@@ -15,7 +20,7 @@ function Servicos() {
           title='Serviços'
           btnClass='hide'
         />
-        
+        <Conteudo2/>
         <Footer/>
       </Suspense>
     </>
