@@ -29,7 +29,7 @@
   .choose_right {
     width: 50%;
     height: 100%;
-    background-color: #faf7f6;
+    background-color: #fff7f0;
   }
   .choose_container {
     width: 100%;
@@ -49,6 +49,7 @@
   .choose_img {
     width: 110%;
     transition: filter 0.3s;
+    border-radius: 10px;
   }
 
   .choose_img:hover{

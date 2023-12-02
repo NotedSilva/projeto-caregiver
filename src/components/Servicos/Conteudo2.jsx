@@ -30,7 +30,7 @@ function Conteudo() {
         </div>
     </section>
 
-    <section class="services-section">
+    <section class="services-section1">
     <div class="services-content">
         <h2>Atividades que compõem os serviços</h2>
         <ul class="services-list">

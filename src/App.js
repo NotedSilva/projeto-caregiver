@@ -6,23 +6,24 @@ import Servicos from "./routes/Servicos";
 import Contato from "./routes/Contato";
 import Conectar from "./routes/Conectar";
 import NossosCuidadores from "./routes/NossosCuidadores";
-import Cuidador from "./routes/Cuidador"
+import Cuidador from "./routes/Cuidador";
 import { useState } from "react";
+import ScrollToTop from "./components/Funcoes/ScrollToTop";
 
 function App() {
-  //passando a variavel cujo valor é ola mundo para todas páginas
   const [nomeUser, SetnomeUser] = useState("ola mundo");
   return (
     <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobrenos" element={<SobreNos />} />
-          <Route path="/Servicos" element={<Servicos />} />
-          <Route path="/Contato" element={<Contato />} />
-          <Route path="/conectar" element={<Conectar />} />
-          <Route path="/NossosCuidadores" element={<NossosCuidadores />} />
-          <Route path="/cuidador" element={<Cuidador />} />
-        </Routes>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobrenos" element={<SobreNos />} />
+        <Route path="/Servicos" element={<Servicos />} />
+        <Route path="/Contato" element={<Contato />} />
+        <Route path="/conectar" element={<Conectar />} />
+        <Route path="/NossosCuidadores" element={<NossosCuidadores />} />
+        <Route path="/cuidador" element={<Cuidador />} />
+      </Routes>
     </div>
   );
 }

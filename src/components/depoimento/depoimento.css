@@ -2,10 +2,11 @@
   background-image: url("../../assets/background.dep.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100vh;
   display: flex;
 }
+
+
 
 .container60 {
   max-width: 1200px;
@@ -28,7 +29,6 @@
 }
 
 .container__left p {
-  color: var(--text-dark);
   margin-bottom: 1rem;
 }
 
@@ -40,10 +40,7 @@
   border-radius: 5px;
   background: linear-gradient(
     to right,
-    var(--primary-color),
-    var(--primary-color-dark)
   );
-  color: var(--white);
   font-size: 1rem;
   cursor: pointer;
 }
@@ -58,7 +55,6 @@
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  background-color: var(--white);
   border-radius: 1rem;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -77,20 +73,19 @@
 
 .card__content span i {
   font-size: 2rem;
-  color: var(--primary-color);
 }
 
 .card__details p {
   font-style: italic;
-  color: var(--text-dark);
+  color: #fff;
   margin-bottom: 1rem;
 }
 
 .card__details h4 {
   text-align: right;
-  color: var(--primary-color);
   font-size: 1rem;
   font-weight: 500;
+  color: #fff;
 }
 
 @media (width < 1200px) {

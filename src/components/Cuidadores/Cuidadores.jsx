@@ -115,37 +115,51 @@ const Cuidadores = () => {
             applyFilters();
           }, [selectedRating, selectedCategory, localização, selectedPrice, searchInput]);
 
+            // reset de filtros
+          const resetFilters = () => {
+            setSelectedCategory(null);
+            setselectedRating(null);
+            setlocalização(localização.map(item => ({ ...item, checked: false })));
+            setselectedPrice([30, 500]);
+            setSearchInput('');
+          };
+
 
     return(
         <div className="cuidadores">
-            {/*Search Bar*/}
-            <SearchBar 
-             value={searchInput}
-             changeInput={(e) => setSearchInput(e.target.value)}
-            />
+        {/* Barra de pesquisa */}
+        <SearchBar
+            value={searchInput}
+            changeInput={(e) => setSearchInput(e.target.value)}
+        />
 
-            <div className='home_panelList-wrap'>
+        <div className='home_container'>
             <div className='home_panel-wrap'>
-            {/*Side Panels*/}
-
-            <FilterPanel 
-            selectCategory={handleselectCategory}
-            selectedCategory={selectedCategory}
-            selectRating={handleSelectRating}
-            selectedRating={selectedRating}
-            localização={localização}
-            changeChecked={handleChangeChecked}
-            selectedPrice={selectedPrice}
-            changePrice={handleChangePrice}
-
-             />
+                {/* Painel de filtros */}
+                <FilterPanel
+                    selectCategory={handleselectCategory}
+                    selectedCategory={selectedCategory}
+                    selectRating={handleSelectRating}
+                    selectedRating={selectedRating}
+                    localizacao={localização}
+                    changeChecked={handleChangeChecked}
+                    selectedPrice={selectedPrice}
+                    changePrice={handleChangePrice}
+                    resetFilters={() => {
+                        setSelectedCategory(null);
+                        setselectedRating(null);
+                        setselectedPrice([30, 500]);
+                        setSearchInput('');
+                    }}
+                />
+            </div>
+            
             <div className='home_list-wrap'>
-            {/* List & Empty View */}
-           {resultsFound ? <List list={list} />:<EmptyView/> } 
-            </div>
-            </div>
+                {/* Lista & Empty View */}
+                {resultsFound ? <List list={list} /> : <EmptyView />}
             </div>
         </div>
+    </div>
     )
 }
 

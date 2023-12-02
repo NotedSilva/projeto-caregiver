@@ -15,7 +15,7 @@ function Contato() {
         <LazyNavbar />
         <LazyMain
           cName='main-mid'
-          MainImg={'https://img.freepik.com/fotos-gratis/enfermeira-segurando-as-maos-de-um-homem-senior-por-simpatia_23-2148740011.jpg?w=1380&t=st=1700961572~exp=1700962172~hmac=2d4e99b75d94527c1e14637bdfeac69f49894514341d7c825acab9ee7df8769b'}
+          MainImg={img2}
           title='Contato'
           btnClass='hide'
         />

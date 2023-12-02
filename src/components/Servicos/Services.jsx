@@ -4,12 +4,14 @@ import petsimg from '../../assets/pets.png'
 import kidsimg from '../../assets/kids.png'
 import grandimg from '../../assets/grandparents.png'
 import pcdimg from '../../assets/woman.png'
+import imgservice from '../../assets/service-img.jpg'
 
 function Services(){
     return(
+      <>
       <section class="services-section">
       <div class="image-container">
-        <img src="https://careforth.com/wp-content/uploads/sites/2/2023/10/GrandmaGrandDaughter-1.jpg?resize=768,761" alt="Cuidadoria"/>
+        <img src={imgservice} alt="Cuidadoria"/>
       </div>
       <div class="content-container">
         <div class="services-title">
@@ -43,6 +45,7 @@ function Services(){
         </div>
       </div>
       </section>
+      </>
   );
 }
 

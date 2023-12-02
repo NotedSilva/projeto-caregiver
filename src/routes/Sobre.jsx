@@ -1,5 +1,5 @@
 import {Suspense } from 'react';
-
+import img4 from '../assets/4.jpg'
 import React from 'react';
 import Footer from '../components/Footer/Footer';
 import Sobrenos from '../components/Sobrenos/Sobrenos';
@@ -15,7 +15,7 @@ function Sobre (){
         <Navbar/>
           <Main
           cName='main-mid'
-          MainImg={'https://img.freepik.com/free-photo/boy-having-occupational-therapy-session-with-psychologist_23-2149091524.jpg?w=1380&t=st=1700961789~exp=1700962389~hmac=6f314ff87bdff7daa3ae7228c5a168925b2856ef5f79ea90c842f2374057b6ef'}
+          MainImg={img4}
           title='Sobre Nós'
           btnClass='hide'
           />

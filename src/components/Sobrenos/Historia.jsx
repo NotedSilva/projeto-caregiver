@@ -1,13 +1,13 @@
 import React from 'react';
 import '../Sobrenos/Historia.css'
-import imghistoria from '../../assets/about-6.png'
+import imgcrianca from '../../assets/img-crianca.jpg'
 
 
 function Historia() {
     return (
       <section className="historia">
         <div className="main-img">
-          <img src={imghistoria} />
+          <img src={imgcrianca} />
         </div>
         <div className="main-text10">
           <h1>Nossa História</h1>

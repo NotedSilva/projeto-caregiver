@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import Main from '../components/Main/Main';
 import Footer from '../components/Footer/Footer';
 import Conteudo2 from '../components/Servicos/Conteudo2';
+import img3 from '../assets/3.jpg'
 
 
 
@@ -16,7 +17,7 @@ function Servicos() {
         <Navbar/>
         <Main
           cName='main-mid'
-          MainImg={'https://img.freepik.com/free-photo/elderly-person-spendng-tim-with-their-pets_23-2149486342.jpg?w=1380&t=st=1700961637~exp=1700962237~hmac=05befb962499c8a569b9b619b229cdf0d1135ab051f9f0441d2931de5da5e39f'}
+          MainImg={img3}
           title='Serviços'
           btnClass='hide'
         />

@@ -12,7 +12,13 @@
 .main-img img{
     max-width: 100%;
     width: 560px;
-    height: auto;
+    height: 75%;
+    border-radius: 10px;
+    transition: filter 0.3s;
+}
+
+.main-img:hover img{
+    filter: brightness(90%);
 }
 
 .main-text10{

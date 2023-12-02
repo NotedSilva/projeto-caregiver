@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import Cuidadores from '../components/Cuidadores/Cuidadores';
+import Navbar from '../components/Navbar/Navbar'
 
 // Importe os componentes usando React.lazy
 

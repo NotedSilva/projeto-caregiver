@@ -12,13 +12,13 @@ const ListItem = ({
       <span>⭐{rating}</span>
     </header>
     <div className="mid-list">
-    <span>{description}</span>
+    <span className="description">{description}</span>
     </div>
-    <footer>
+    <footer className="details">
       <p>
-        <b>{localization}</b> <span>{category}</span>
+        <b>{localization}</b> <br /> <span>{category}</span>
       </p>
-      <p>
+      <p className="value">
         <b>${price}</b>
       </p>
     </footer>

@@ -8,6 +8,7 @@ import Tutorial from '../components/Tutorial/Tutorial';
 import Contato from '../components/Contato/Contato';
 import React, { Suspense } from 'react';
 import Conteudo from '../components/Conteudo/Conteudo';
+import img1 from '../assets/1.jpg'
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
         <Navbar/>
         <Main
           cName='main'
-          MainImg={'https://img.freepik.com/fotos-gratis/casal-senior-curtindo-o-por-do-sol-juntos-pela-agua-gerada-pela-ia_188544-24741.jpg?w=1480&t=st=1700961475~exp=1700962075~hmac=fe5e2ba9ad0e44e567509f7347014fecfc21b96e2cbdea91f2ffca931f25982a'}
+          MainImg={img1}
           title='Cuide Bem, Viva Melhor'
           text='Seu Bem-Estar é a Nossa Prioridade'
           buttonText='Conheça Nossos Cuidadores'

@@ -6,9 +6,9 @@ import CheckboxProton from '../CheckboxProton/Checkbox'
 import SliderProton from '../SliderProton/SliderProton';
 
 
-const FilterPanel = ({selectedCategory,selectCategory,selectedRating,selectRating, localização, changeChecked, selectedPrice, changePrice}) => {
+const FilterPanel = ({selectedCategory,selectCategory,selectedRating,selectRating, localização, changeChecked, selectedPrice, changePrice, resetFilters}) => {
   return (
-    <div>
+    <div className='filtros-panel'>
       {/* Category */}
       <div className="input-group">
         <p className="label">Categoria</p>
@@ -46,6 +46,12 @@ const FilterPanel = ({selectedCategory,selectCategory,selectedRating,selectRatin
         value={selectedRating}
         selectToggle={selectRating}
       />
+      </div>
+         {/* Resetar Filtros */}
+      <div className="input-group">
+        <button className="reset-button" onClick={resetFilters}>
+          Resetar Filtros
+        </button>
       </div>
     </div>
   )

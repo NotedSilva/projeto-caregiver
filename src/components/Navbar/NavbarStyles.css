@@ -14,6 +14,7 @@
     transform: translate(-50%);
     z-index: 999;
     margin: 0 auto;
+    transition: top 0.3s ease-in-out;
 }
 
 .navbar-logo{
