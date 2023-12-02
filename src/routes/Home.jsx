@@ -10,6 +10,7 @@ import React, { Suspense } from 'react';
 import Conteudo from '../components/Conteudo/Conteudo';
 import img1 from '../assets/1.jpg'
 
+
 function Home() {
   return (
     <>

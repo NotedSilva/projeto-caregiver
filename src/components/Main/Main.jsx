@@ -18,4 +18,4 @@ function Main (props){
     )
 }
 
-export default React.memo(Main);
+export default Main;

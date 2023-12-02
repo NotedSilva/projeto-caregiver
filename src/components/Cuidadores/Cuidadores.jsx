@@ -6,6 +6,7 @@ import '../Cuidadores/CuidadorStyles.css';
 import { dataList } from "../../db/DbCuidadores";
 import EmptyView from "./pages/EmptyView/EmptyView";
 
+
 const Cuidadores = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [selectedRating, setselectedRating] = useState(null);
@@ -113,7 +114,7 @@ const Cuidadores = () => {
 
         useEffect(() => {
             applyFilters();
-          }, [selectedRating, selectedCategory, localização, selectedPrice, searchInput]);
+          }, [selectedRating, selectedCategory, localização, selectedPrice, searchInput,]);
 
             // reset de filtros
           const resetFilters = () => {
@@ -148,6 +149,7 @@ const Cuidadores = () => {
                     resetFilters={() => {
                         setSelectedCategory(null);
                         setselectedRating(null);
+                        setlocalização(localização.map(item => ({ ...item, checked: false })));
                         setselectedPrice([30, 500]);
                         setSearchInput('');
                     }}
@@ -163,4 +165,4 @@ const Cuidadores = () => {
     )
 }
 
-export default React.memo(Cuidadores); 
+export default Cuidadores; 

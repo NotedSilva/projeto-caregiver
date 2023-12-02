@@ -26,4 +26,4 @@ const Conectar = () => {
   );
 };
 
-export default React.memo(Conectar);
+export default Conectar;

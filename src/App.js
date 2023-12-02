@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Home from "./routes/Home";
 import SobreNos from "./routes/Sobre";
@@ -7,15 +7,13 @@ import Contato from "./routes/Contato";
 import Conectar from "./routes/Conectar";
 import NossosCuidadores from "./routes/NossosCuidadores";
 import Cuidador from "./routes/Cuidador";
-import { useState } from "react";
 import ScrollToTop from "./components/Funcoes/ScrollToTop";
-
 function App() {
-  const [nomeUser, SetnomeUser] = useState("ola mundo");
+  const location = useLocation();
   return (
     <div className="App">
       <ScrollToTop />
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/sobrenos" element={<SobreNos />} />
         <Route path="/Servicos" element={<Servicos />} />
