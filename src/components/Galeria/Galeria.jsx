@@ -15,7 +15,7 @@ function Galeria() {
     
     return (
       <div className="container">
-        <h1 className="heading">Galeria</h1>
+        <h1 className="heading">Junte-se à comunidade Caregiver</h1>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -39,27 +39,27 @@ function Galeria() {
           initialSlide={1}
         >
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-gratis/enfermeira-de-tiro-medio-verificando-homem_23-2148940067.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=sph'} alt="slide_image" />
+            <img src={'https://www.nationalchurchresidences.org/wp-content/uploads/2022/12/iStock-1408692330-scaled.jpg'} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-gratis/mae-e-filha-de-tiro-medio-em-casa_23-2150275613.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=ais'} alt="slide_image" />
+            <img src={'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2147486178/settings_images/Q7pzYhASQS2PLgYfkxmV_Copyright2021AHG_CaregiverWithDog.jpg'} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-gratis/pessoa-ajudando-seu-vizinho-mais-velho_23-2149139785.jpg?w=1380&t=st=1700963351~exp=1700963951~hmac=05aa6cdc387afd9b1bcef8151b1dc20ec4b02c09b59d40b0d192d5f649683fc3'} alt="slide_image" />
+            <img src={'https://www.carelink.org/wp-content/uploads/2021/08/how_to_become_a_caregiver.jpg'} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-gratis/estilo-de-vida-da-crianca-em-cadeira-de-rodas_23-2149158048.jpg?w=1380&t=st=1700963132~exp=1700963732~hmac=2945f56ef904a51668760c071a13923ad19e8b6c22753a6746ea7988f70fe030'} alt="slide_image" />
+            <img src={'https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Child_Caregiver.jpg'} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-gratis/mulher-sorridente-de-tiro-medio-e-cachorro-fofo_23-2149652697.jpg?size=626&ext=jpg&ga=GA1.1.1155766442.1690948429&semt=ais'} alt="slide_image" />
+            <img src={'https://bestfriends.org/sites/default/files/styles/story_desktop_1920x1230_/public/2020/Favorites-AnsemSophie1212MW.jpg?h=6db3cedb&itok=dE7UmhOc'} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-premium/uma-menina-diagnosticada-com-autismo-com-sua-mae-em-um-centro-de-reabilitacao_340855-3954.jpg?w=740'} alt="slide_image" />
+            <img src={'https://pascohh.com/wp-content/uploads/2021/06/iStock-1154433276.jpg'} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={'https://img.freepik.com/fotos-gratis/gato-malhado-castanho-com-gola-em-pe-no-jardim_23-2148045681.jpg?w=1380&t=st=1700963250~exp=1700963850~hmac=a492b1874f1fbe8418a3c5c381f40526c75b327aaad5a21aa9b386d1fbb9a2b7'} alt="slide_image" />
+            <img src={'https://supportforfamilies.org/wp-content/uploads/2023/10/Caregiver-and-Child-engaged-in-a-Developmental-Screening.jpg'} alt="slide_image" />
           </SwiperSlide>
-  
+          
           <div className="slider-controler">
             <div className="swiper-button-prev slider-arrow">
               <ion-icon name="arrow-back-outline"></ion-icon>

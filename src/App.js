@@ -8,6 +8,7 @@ import Conectar from "./routes/Conectar";
 import NossosCuidadores from "./routes/NossosCuidadores";
 import Cuidador from "./routes/Cuidador";
 import ScrollToTop from "./components/Funcoes/ScrollToTop";
+import Agradecimento from "./routes/Agradecimento";
 function App() {
   const location = useLocation();
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/conectar" element={<Conectar />} />
         <Route path="/NossosCuidadores" element={<NossosCuidadores />} />
         <Route path="/cuidador" element={<Cuidador />} />
+        <Route path="/Agradecimento" element={<Agradecimento />} />
       </Routes>
     </div>
   );

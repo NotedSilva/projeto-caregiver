@@ -80,7 +80,7 @@ const ContatoComponent = () => {
           <span className="circle one"></span>
           <span className="circle two"></span>
 
-          <form action="" autoComplete="off">
+          <form className="form1010" action="" autoComplete="off">
             <h3 className="title">Contate-nos</h3>
             <div className="input-container">
               <input type="text" name="name" className="input" />
