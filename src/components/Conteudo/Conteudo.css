@@ -25,6 +25,7 @@
     width: 50%;
     height: 100%;
     background-color: #ffe9d7;
+    z-index: 1;
   }
   .choose_right {
     width: 50%;

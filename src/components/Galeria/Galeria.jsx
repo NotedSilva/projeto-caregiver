@@ -14,7 +14,7 @@ function Galeria() {
 
     
     return (
-      <div className="container">
+      <div className="container99">
         <h1 className="heading">Junte-se à comunidade Caregiver</h1>
         <Swiper
           effect={'coverflow'}

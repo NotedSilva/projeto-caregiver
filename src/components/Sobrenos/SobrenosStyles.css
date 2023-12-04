@@ -20,6 +20,7 @@
     background: #fff;
     padding: 100px 40px 60px;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+    border-radius: 10px;
 }
 
 .container20 .box20::before{
@@ -33,6 +34,7 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
+    border-radius: 10px;
 }
 
 .container20 .box20:hover::before{
