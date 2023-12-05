@@ -4,7 +4,7 @@ import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles({
   root: {
-    width: '100%',
+    width: '90%',
   },
   thumb: {
     color: '#000',

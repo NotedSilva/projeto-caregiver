@@ -2,15 +2,25 @@
     margin-bottom: 0.8rem;
     font-weight: 600;
   }
-  .input-group {
-    margin-bottom: 2rem;
+  .input-group1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+    align-items: center;
   }
+
+  .filtros-panel{
+    max-height: 500px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 7rem;
+  }
+
   .label-range {
     margin-bottom: 2.5rem;
     font-weight: 600;
   }
-
- 
 
   .reset-button {
     background-color: rgb(34, 33, 33);

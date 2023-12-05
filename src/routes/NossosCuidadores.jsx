@@ -1,20 +1,22 @@
 import React, { lazy, Suspense } from 'react';
 import Cuidadores from '../components/Cuidadores/Cuidadores';
 import Navbar from '../components/Navbar/Navbar'
-
-// Importe os componentes usando React.lazy
-
-const LazyFooter = lazy(() => import('../components/Footer/Footer'));
+import Footer from '../components/Footer/Footer';
+import {motion} from 'framer-motion'
 
 function NossosCuidadores() {
   return (
-    <>
-      <Suspense fallback={<div>Carregando...</div>}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+        <Navbar/>
         <Cuidadores />
-        <LazyFooter />
-      </Suspense>
-    </>
+        <Footer />
+    </motion.div>
   );
 }
 
-export default React.memo(NossosCuidadores);
+export default NossosCuidadores;

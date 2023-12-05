@@ -81,6 +81,7 @@ export const dataList = [
     rating: 5,
     price: 80,
     coverSrc: pessoa1,
+    avali: '(52 avaliações)',
   },
   {
       id: 2,
@@ -91,6 +92,7 @@ export const dataList = [
       rating: 4,
       price: 105,
       coverSrc: pessoa2,
+      avali: '(18 avaliações)',
     },
     {
       id: 3,
@@ -101,6 +103,7 @@ export const dataList = [
       rating: 3,
       price: 90,
       coverSrc: pessoa3,
+      avali: '(25 avaliações)',
     },
     {
       id: 4,
@@ -111,6 +114,7 @@ export const dataList = [
       rating: 4,
       price: 60,
       coverSrc: pessoa4,
+      avali: '(10 avaliações)',
     },
     {
       id: 5,
@@ -121,6 +125,7 @@ export const dataList = [
       rating: 5,
       price: 200,
       coverSrc: pessoa5,
+      avali: '(07 avaliações)',
     },
     {
       id: 6,
@@ -131,6 +136,7 @@ export const dataList = [
       rating: 2,
       price: 150,
       coverSrc: pessoa6,
+      avali: '(33 avaliações)',
     },
     {
       id: 7,
@@ -141,6 +147,7 @@ export const dataList = [
       rating: 4,
       price: 130,
       coverSrc: pessoa7,
+      avali: '(15 avaliações)',
     },
     {
       id: 8,
@@ -151,6 +158,7 @@ export const dataList = [
       rating: 5,
       price: 220,
       coverSrc: pessoa8,
+      avali: '(46 avaliações)',
     },
     {
       id: 9,
@@ -161,6 +169,7 @@ export const dataList = [
       rating: 2,
       price: 102,
       coverSrc: pessoa9,
+      avali: '(12 avaliações)',
     },
     {
       id: 10,
@@ -171,6 +180,7 @@ export const dataList = [
       rating: 5,
       price: 90,
       coverSrc: pessoa10,
+      avali: '(55 avaliações)',
     },
     {
       id: 11,
@@ -181,6 +191,7 @@ export const dataList = [
       rating: 1,
       price: 95,
       coverSrc: pessoa11,
+      avali: '(60 avaliações)',
     },
     {
       id: 12,
@@ -191,6 +202,7 @@ export const dataList = [
       rating: 4,
       price: 108,
       coverSrc: pessoa12,
+      avali: '(31 avaliações)',
     },
     {
       id: 13,
@@ -201,6 +213,7 @@ export const dataList = [
       rating: 3,
       price: 100,
       coverSrc: pessoa13,
+      avali: '(44 avaliações)',
     },
     {
       id: 14,
@@ -211,6 +224,7 @@ export const dataList = [
       rating: 4,
       price: 140,
       coverSrc: pessoa14,
+      avali: '(28 avaliações)',
     },
     {
       id: 15,
@@ -221,6 +235,7 @@ export const dataList = [
       rating: 3,
       price: 90,
       coverSrc: pessoa15,
+      avali: '(14 avaliações)',
     },
     {
       id: 16,
@@ -231,6 +246,7 @@ export const dataList = [
       rating: 4,
       price: 80,
       coverSrc: pessoa16,
+      avali: '(82 avaliações)',
     },
     {
       id: 17,
@@ -241,6 +257,7 @@ export const dataList = [
       rating: 5,
       price: 65,
       coverSrc: pessoa17,
+      avali: '(55 avaliações)',
     },
     {
       id: 18,
@@ -251,6 +268,7 @@ export const dataList = [
       rating: 5,
       price: 110,
       coverSrc: pessoa18,
+      avali: '(33 avaliações)',
     },
     {
       id: 19,
@@ -261,6 +279,7 @@ export const dataList = [
       rating: 5,
       price: 130,
       coverSrc: pessoa19,
+      avali: '(21 avaliações)',
     },
     {
       id: 20,
@@ -271,5 +290,6 @@ export const dataList = [
       rating: 5,
       price: 220,
       coverSrc: pessoa20,
+      avali: '(25 avaliações)',
     },
 ];

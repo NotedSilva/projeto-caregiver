@@ -10,7 +10,9 @@ const FilterPanel = ({
   selectCategory,
   selectedRating,
   selectRating,
-  localizacao,  // Certifique-se de que está sendo passado como prop corretamente
+  localização,
+  handleChangeChecked,
+  localizacao,
   changeChecked,
   selectedPrice,
   changePrice,
@@ -19,7 +21,7 @@ const FilterPanel = ({
   return (
     <div className='filtros-panel'>
       {/* Category */}
-      <div className="input-group">
+      <div className="input-group1">
         <p className="label">Categoria</p>
 
         <FilterListToggle
@@ -30,25 +32,25 @@ const FilterPanel = ({
       </div>
 
       {/* Localizacao */}
-      <div className="input-group">
-        <p className="label">Localização</p>
-        {localizacao.map((localizacao) => (
-          <CheckboxProton
-            key={localizacao.id}
-            localizacao={localizacao}
-            changeChecked={changeChecked}
-          />
-        ))}
-      </div>
+      <div className="input-group1">
+  <p className="label">Localização</p>
+  {Array.isArray(localização) && localização.map((localizacaoItem) => (
+    <CheckboxProton
+      key={localizacaoItem.id}
+      localização={localizacaoItem}
+      changeChecked={handleChangeChecked}
+    />
+  ))}
+</div>
 
       {/* Price Range */}
-      <div className='input-group'>
+      <div className='input-group1'>
         <p className="label-range">Preço</p>
         <SliderProton value={selectedPrice} changePrice={changePrice} />
       </div>
 
       {/* Star Rating */}
-      <div className="input-group">
+      <div className="input-group1">
         <p className="label">Avaliação</p>
         <FilterListToggle
           options={ratingList}
@@ -58,7 +60,7 @@ const FilterPanel = ({
       </div>
 
       {/* Resetar Filtros */}
-      <div className="input-group">
+      <div className="input-group1">
         <button className="reset-button" onClick={resetFilters}>
           Resetar Filtros
         </button>

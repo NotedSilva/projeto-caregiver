@@ -2,13 +2,13 @@ import React from 'react';
 import '../ListItem/ListItemStyles.css';
 
 const ListItem = ({
-  item: { coverSrc, name, price, category, localization, rating, description },
+  item: { coverSrc, name, price, category, localization, rating, description, avali },
 }) => (
   <div className='listItem-wrap'>
     <img src={coverSrc} alt='' />
     <div className='together-list'>
     <header>
-      <h4>{name}</h4><span className='span-2'>(52 avaliações)</span>
+      <h4>{name}</h4><span className='span-2'>{avali}</span> 
       <span>⭐{rating}</span>
     </header>
     <div className="mid-list">

@@ -1,29 +1,30 @@
-
 import img2 from '../assets/2.jpg';
-import React, { lazy, Suspense } from 'react';
-
-// Importe os componentes usando React.lazy
-const LazyNavbar = lazy(() => import('../components/Navbar/Navbar'));
-const LazyMain = lazy(() => import('../components/Main/Main'));
-const LazyFooter = lazy(() => import('../components/Footer/Footer'));
-const LazyContatoForm = lazy(() => import('../components/Contato/ctnform/ContatoForm'));
+import React from 'react';
+import Navbar from '../components/Navbar/Navbar';
+import Main from '../components/Main/Main';
+import Footer from '../components/Footer/Footer';
+import ContatoForm from '../components/Contato/ctnform/ContatoForm';
+import {motion} from 'framer-motion'
 
 function Contato() {
   return (
-    <>
-      <Suspense fallback={<div>Carregando...</div>}>
-        <LazyNavbar />
-        <LazyMain
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.6 }}
+    >
+        <Navbar />
+        <Main
           cName='main-mid'
           MainImg={img2}
           title='Contato'
           btnClass='hide'
         />
-        <LazyContatoForm />
-        <LazyFooter />
-      </Suspense>
-    </>
+        <ContatoForm />
+        <Footer />
+    </motion.div>
   );
 }
 
-export default React.memo(Contato);
+export default Contato;

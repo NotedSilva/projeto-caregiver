@@ -1,16 +1,23 @@
 .cuidadores {
   display: flex;
   flex-direction: column;
+  background-color: #FFFFFF;
 }
 
 .home_panelList-wrap {
   flex: 1;
 }
 
+.home-h1{
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+}
+
 .home_panel-wrap {
   display: flex;
   flex-basis: 280px;
-  padding: 1rem;
+  padding: 1.8rem;
+  background-color: #FFFFFF;
 }
 
 .home_list-wrap {

@@ -1,4 +1,3 @@
-import {Suspense } from 'react';
 import img4 from '../assets/4.jpg'
 import React from 'react';
 import Footer from '../components/Footer/Footer';
@@ -6,12 +5,17 @@ import Sobrenos from '../components/Sobrenos/Sobrenos';
 import Main from '../components/Main/Main';
 import Navbar from '../components/Navbar/Navbar';
 import Historia from '../components/Sobrenos/Historia';
+import {motion} from 'framer-motion'
 
 
 function Sobre (){
     return(
-        <>
-      <Suspense fallback={<div>Carregando...</div>}>
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.6 }}
+        >
         <Navbar/>
           <Main
           cName='main-mid'
@@ -22,9 +26,8 @@ function Sobre (){
           <Historia />
           <Sobrenos/>
           <Footer/>
-          </Suspense>
-        </>
+        </motion.div>
     )
 }
 
-export default React.memo(Sobre);
+export default Sobre;

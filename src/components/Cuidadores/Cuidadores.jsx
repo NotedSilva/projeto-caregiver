@@ -60,7 +60,6 @@ const Cuidadores = () => {
             (item) => item.category === selectedCategory
             );
          }
-/*
          // Localização Filtro (tenho que arrumar)
         const localizaçãoChecked = localização
             .filter((item) => item.checked)
@@ -71,7 +70,6 @@ const Cuidadores = () => {
             localizaçãoChecked.includes(item.localization)
             );
         }
-*/
 
          // Search Filter (modelo antigo, onde encontra a letra que vc digitar em qualquer parte do nome da pessoa)
       /*  if (searchInput) {
@@ -134,7 +132,7 @@ const Cuidadores = () => {
             changeInput={(e) => setSearchInput(e.target.value)}
         />
 
-        <div className='home_container'>
+        <div className='home_panelList-wrap'>
             <div className='home_panel-wrap'>
                 {/* Painel de filtros */}
                 <FilterPanel
@@ -154,12 +152,13 @@ const Cuidadores = () => {
                         setSearchInput('');
                     }}
                 />
-            </div>
-            
             <div className='home_list-wrap'>
+                <h1 className="home-h1">Nossos Cuidadores</h1>
                 {/* Lista & Empty View */}
                 {resultsFound ? <List list={list} /> : <EmptyView />}
             </div>
+            </div>
+            
         </div>
     </div>
     )

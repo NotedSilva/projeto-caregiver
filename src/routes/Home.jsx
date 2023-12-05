@@ -6,15 +6,20 @@ import Main from '../components/Main/Main';
 import Navbar from '../components/Navbar/Navbar';
 import Tutorial from '../components/Tutorial/Tutorial';
 import Contato from '../components/Contato/Contato';
-import React, { Suspense } from 'react';
 import Conteudo from '../components/Conteudo/Conteudo';
 import img1 from '../assets/1.jpg'
-
+import { motion, useAnimation } from 'framer-motion';
+import React from 'react';
 
 function Home() {
+
   return (
-    <>
-      <Suspense fallback={<div>Carregando...</div>}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+    >
         <Navbar/>
         <Main
           cName='main'
@@ -32,8 +37,7 @@ function Home() {
         <Faq/>
         <Contato/>
         <Footer/>
-      </Suspense>
-    </>
+    </motion.div>
   );
 }
 

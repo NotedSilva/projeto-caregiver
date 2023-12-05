@@ -4,16 +4,18 @@ import Main from '../components/Main/Main';
 import Footer from '../components/Footer/Footer';
 import Conteudo2 from '../components/Servicos/Conteudo2';
 import img3 from '../assets/3.jpg'
-
-
-
+import {motion} from 'framer-motion'
 
 
 
 function Servicos() {
   return (
-    <>
-      <Suspense fallback={<div>Carregando...</div>}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
         <Navbar/>
         <Main
           cName='main-mid'
@@ -23,9 +25,8 @@ function Servicos() {
         />
         <Conteudo2/>
         <Footer/>
-      </Suspense>
-    </>
+    </motion.div>
   );
 }
 
-export default React.memo(Servicos);
+export default Servicos;
