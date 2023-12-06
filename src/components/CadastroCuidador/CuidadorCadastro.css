@@ -18,17 +18,18 @@
   .landing-teacher-v4-header-upper {
     display: flex;
     justify-content: center;
+    position: relative;
   }
   
   .text-content22 {
-    width: 30%;
+    flex: 1;
+    max-width: 550px;
     padding: 20px;
-    font-size: 16x;
+    font-size: 16px;
     font-weight: 600;
     color: #23103d;
     margin: 10px 20px 40px;
     text-align: start; 
-    margin-left: 15rem;
   }
 
   .p-cuid{
@@ -41,8 +42,9 @@
 
   .header-shape {
     position: absolute;
-    top: 8rem;
-    right: 10rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     width: 499px;
     height: 705px;
     background-image: url(../../assets/yellowForm.png);
@@ -52,9 +54,15 @@
     filter: sepia(100%) saturate(130%) hue-rotate(335deg);
   }
 
+  .registration-form10{
+    flex: 1;
+  }
+
 
   .form10 {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,41 +197,89 @@
     color: #fff;
 }
 
-@media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
-}
+.input-box.error {
+    border: 1px solid red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  
 
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
+
+/* Responsividade */
+
+
+@media screen and (max-width: 768px) {
+    .landing-teacher-v4-header-upper {
+      flex-direction: column;
+      align-items: center;
     }
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
+  
+    .text-content22,
+    .form10 {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .gender-inputs {
-        margin-top: 2rem;
+  
+    .text-content22 {
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .gender-group {
-        flex-direction: column;
+  
+    .header-shape {
+      top: 2rem;
+      right: 0;
+      width: 100%;
+      height: auto;
+      background-size: contain;
+      filter: sepia(100%) saturate(130%) hue-rotate(335deg);
     }
-    .gender-title h6 {
+
+    .registration-form10{
         margin: 0;
+        padding: 0;
     }
+  
+    .form10 {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .form-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .login-button {
+      margin-top: 1rem;
+    }
+  
+    .input-group {
+      flex-direction: column;
+      padding: 0.5rem 0;
+    }
+  
+    .input-box {
+      width: 100%;
+    }
+  
+    .input-box input {
+      width: 100%;
+    }
+  
+    .gender-group {
+      flex-direction: column;
+    }
+  
     .gender-input {
-        margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
-}
+  
+    .continue-button button {
+      margin-top: 1.5rem;
+    }
+  }

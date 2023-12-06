@@ -4,7 +4,7 @@ import React from 'react';
 function Main (props){
     return(<>
         <div className={props.cName}>
-            <img alt="MainImg" src={props.MainImg}></img>
+            <img className="img-principal" alt="MainImg" src={props.MainImg}></img>
 
             <div className="main-text">
                 <h1>{props.title}</h1>

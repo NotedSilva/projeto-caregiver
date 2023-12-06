@@ -21,7 +21,7 @@ function Conteudo() {
         <div class="services-content2">
             <h2>SEMPRE JUNTOS</h2>
             <ul class="services-list2">
-                <li>Nossos Cuidadores são capacitados para prestarem serviços em</li>
+                <li>Nossos Cuidadores são capacitados para prestarem serviços em:</li>
                 <li class="service-item2"><img src="https://maiscuidar.com/wp-content/uploads/2020/06/logo_home_outline_icon.svg" alt="Residências"/> Residências</li>
                 <li class="service-item2"><img src="https://maiscuidar.com/wp-content/uploads/2020/06/hospital_1.svg" alt="Hospitais"/> Hospitais</li>
                 <li class="service-item2"><img src="https://maiscuidar.com/wp-content/uploads/2020/06/clinica.svg" alt="Clínicas"/> Clínicas</li>

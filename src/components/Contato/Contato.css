@@ -40,3 +40,22 @@
     background: #CD853F;
     transition: 1s;
 }
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .cta {
+      width: 80%;
+      padding: 80px 0;
+      background-size: auto;
+    }
+  
+    .cta h1 {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+  
+    .hero-btn {
+      font-size: 12px;
+      padding: 10px 24px;
+    }
+  }

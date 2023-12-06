@@ -1,8 +1,30 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom'; 
+import InputMask from 'react-input-mask';
 import '../CadastroCuidador/CuidadorCadastro.css';
 
 function Cuidador() {
+
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    number: '',
+    password: '',
+    confirmPassword: '',
+    gender: '',
+  });
+
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+
   return (
     <>
       <div className="landing-teacher-v4">
@@ -20,7 +42,7 @@ function Cuidador() {
                   Estamos ansiosos para recebê-lo.
               </p>
             </div>
-            <div className="registration-form">
+            <div className="registration-form10">
               <div className="form10">
                 <form className="form100" action="#">
                   <div className="form-header">
@@ -40,6 +62,9 @@ function Cuidador() {
                         type="text"
                         name="firstname"
                         placeholder="Primeiro nome"
+                        maxLength={20}
+                        value={formData.firstname}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -51,6 +76,9 @@ function Cuidador() {
                         type="text"
                         name="lastname"
                         placeholder="Sobrenome"
+                        maxLength={30}
+                        value={formData.lastname}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -61,20 +89,26 @@ function Cuidador() {
                         type="email"
                         name="email"
                         placeholder="E-mail"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                         required
                       />
                     </div>
 
                     <div className="input-box">
-                      <label htmlFor="number">Celular</label>
-                      <input
-                        id="number"
-                        type="tel"
-                        name="number"
-                        placeholder="(xx) xxxx-xxxx"
-                        required
-                      />
-                    </div>
+                    <label htmlFor="number">Celular</label>
+                    <InputMask
+                      mask="(99) 99999-9999"
+                      maskChar={null}
+                      type="tel"
+                      name="number"
+                      placeholder="(xx) xxxxx-xxxx"
+                      value={formData.number}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
 
                     <div className="input-box">
                       <label htmlFor="password">Senha</label>
@@ -129,7 +163,7 @@ function Cuidador() {
 
                   <div className="continue-button">
                   <Link to="/agradecimento">
-                    <button><a>Enviar</a> </button>
+                    <button type='submit'><a>Enviar</a> </button>
                     </Link>
                   </div>
                 </form>

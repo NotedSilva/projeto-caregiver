@@ -13,7 +13,7 @@ export const Container = styled.div`
   width: 678px;
   max-width: 100%;
   min-height: 400px;
-  margin: 0px;
+  margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
 `;

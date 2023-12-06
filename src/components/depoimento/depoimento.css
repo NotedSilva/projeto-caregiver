@@ -42,7 +42,6 @@
     to right,
   );
   font-size: 1rem;
-  cursor: pointer;
 }
 
 .container__right {
@@ -57,7 +56,6 @@
   gap: 2rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
 
 .card60 img {
@@ -107,5 +105,15 @@
 @media (width < 750px) {
   .container__right {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .card60 img{
+    max-height: 100px;
+    margin-top: 1.5rem;
+  }
+  .card__details p{
+    color: #000000;
+  }
+  .card__details h4{
+    color: #000000;
   }
 }

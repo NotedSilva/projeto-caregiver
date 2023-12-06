@@ -7,9 +7,10 @@ import {motion} from 'framer-motion'
 function Agradecimento() {
   return (
     <motion.div
-    initial={{ height: 0 }}
-    animate={{ height: "100%" }}
-    exit={{ y: window.innerHeight, transition: { duration: 0.5 } }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
     >
     <Navbar/>
     <PaginaAgradecimento/>

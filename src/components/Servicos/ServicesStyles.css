@@ -79,3 +79,50 @@
 .read-more-button:hover {
   background-color: #ad774e;
 }
+
+/* Responsividade */
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+
+  .services-section{
+    padding: 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-container {
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .services-title {
+    font-size: 30px;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
+
+/* Media Query para telas menores que 480px */
+@media screen and (max-width: 480px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-container {
+    padding: 5px;
+  }
+
+  .services-title {
+    font-size: 25px;
+  }
+}
