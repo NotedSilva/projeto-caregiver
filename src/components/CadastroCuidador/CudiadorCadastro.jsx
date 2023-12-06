@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; 
 import InputMask from 'react-input-mask';
 import '../CadastroCuidador/CuidadorCadastro.css';
 
 function Cuidador() {
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     firstname: '',
@@ -15,14 +17,23 @@ function Cuidador() {
     gender: '',
   });
 
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevFormData) => ({
+      ...prevFormData,
       [name]: value,
-    });
+    }));
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Realize a validação dos campos antes de navegar para a próxima rota
+
+    // Se a validação for bem-sucedida, navegue para a próxima rota
+    navigate('/agradecimento');
+  };
+
 
 
   return (
@@ -44,7 +55,7 @@ function Cuidador() {
             </div>
             <div className="registration-form10">
               <div className="form10">
-                <form className="form100" action="#">
+                <form className="form100" onSubmit={handleSubmit}>
                   <div className="form-header">
                     <div className="title-form">
                       <h1>Cadastre-se</h1>
@@ -162,9 +173,7 @@ function Cuidador() {
                   </div>
 
                   <div className="continue-button">
-                  <Link to="/agradecimento">
                     <button type='submit'><a>Enviar</a> </button>
-                    </Link>
                   </div>
                 </form>
               </div>

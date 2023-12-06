@@ -10,13 +10,16 @@ export const Container = styled.div`
   left: 50%;
   top: 42%;
   transform: translate(-50%, -26%);
-  width: 678px;
-  max-width: 100%;
+  width: 90%; /* Ajustei a largura para ser responsiva */
+  max-width: 678px;
   min-height: 400px;
   margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
 `;
+
+const getWidth = (props) => (props.wide ? '100%' : '50%');
+
 
 export const SignUpContainer = styled.div`
   position: absolute;
@@ -24,7 +27,7 @@ export const SignUpContainer = styled.div`
   height: 100%;
   transition: all 0.6s ease-in-out;
   left: 0;
-  width: 50%;
+  width: ${getWidth};
   opacity: 0;
   z-index: 1;
   ${props =>
@@ -43,7 +46,7 @@ export const SignInContainer = styled.div`
   height: 100%;
   transition: all 0.6s ease-in-out;
   left: 0;
-  width: 50%;
+  width: ${getWidth};
   z-index: 2;
   ${props => (props.signinIn !== true ? `transform: translateX(100%);` : null)}
 `;
@@ -173,15 +176,22 @@ const breakPoint = '768px';
 export const ResponsiveContainer = styled(Container)`
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
   
   @media screen and (max-width: ${breakPoint}) {
-    padding: 10px;
+    padding: 150px;
     min-height: auto;
+    display: flex;
+    flex-direction: column; /* Alteração para coluna em telas menores */
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
   }
 `;
 
 export const ResponsiveForm = styled(Form)`
-  padding: 0 20px; /* Ajuste o padding conforme necessário */
+  padding: 0 20px;
+  box-sizing: border-box;
   
   @media screen and (max-width: ${breakPoint}) {
     padding: 0 10px;
@@ -189,29 +199,31 @@ export const ResponsiveForm = styled(Form)`
 `;
 
 export const ResponsiveButton = styled(Button)`
-  padding: 12px 25px; /* Ajuste o padding conforme necessário */
+  padding: 12px 25px;
+  box-sizing: border-box;
   
   @media screen and (max-width: ${breakPoint}) {
-    padding: 12px 15px; /* Ajuste o padding conforme necessário */
+    padding: 12px 15px;
   }
 `;
 
 export const ResponsiveOverlayPanel = styled(OverlayPanel)`
-  padding: 0 20px; /* Ajuste o padding conforme necessário */
+  padding: 0 20px;
+  box-sizing: border-box;
   
   @media screen and (max-width: ${breakPoint}) {
-    padding: 0 10px; /* Ajuste o padding conforme necessário */
+    padding: 0 10px;
   }
 `;
 
 export const ResponsiveParagraph = styled(Paragraph)`
-  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
-  line-height: 20px; /* Ajuste a altura da linha conforme necessário */
+  font-size: 14px;
+  line-height: 20px;
   margin: 20px 0 30px;
   
   @media screen and (max-width: ${breakPoint}) {
-    font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
-    line-height: 16px; /* Ajuste a altura da linha conforme necessário */
+    font-size: 12px;
+    line-height: 16px;
     margin: 10px 0 20px;
   }
 `;

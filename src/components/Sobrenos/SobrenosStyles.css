@@ -12,6 +12,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
 }
 
 .container20 .box20{
