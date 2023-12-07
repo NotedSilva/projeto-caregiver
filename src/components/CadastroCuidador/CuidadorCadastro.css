@@ -132,6 +132,7 @@
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
+    -webkit-box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
 }
 
@@ -196,17 +197,6 @@
     font-weight: 500;
     color: #fff;
 }
-
-.input-box.error {
-    border: 1px solid red;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-  }
-  
 
 
 /* Responsividade */
