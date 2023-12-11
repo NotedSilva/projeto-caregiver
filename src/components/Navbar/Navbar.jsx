@@ -35,8 +35,8 @@ const Navbar = () => {
   
     return (
       <nav className={`navbarItems`}>
-        <h1 className="navbar-logo">
-          <img className="logo-img" src={logoimg} alt="logo" />
+        <h1 className="navbar-logo"> Caregiver
+         {/*} <img className="logo-img" src={logoimg} alt="logo" /> } {*/}
         </h1>
   
         <div className="menu-icons" onClick={handleClick}>
